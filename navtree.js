@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "mand-1.0", "index.html", [
+    [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", null, [
       [ "Data Structures", "annotated.html", "annotated" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -27,7 +28,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"dmconfig_8c.html#ad6a88d920bc9f73749a980a5bf01a4a5",
+"dmconfig_8c.html#gaaf2a90d67d5f054e12ad12e7e69d7bd5",
 "globals_func_0x68.html"
 ];
 
