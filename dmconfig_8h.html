@@ -389,112 +389,163 @@ Functions</h2></td></tr>
 <tr class="memitem:gaeb83619f319b83901f74360666adb495"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gaeb83619f319b83901f74360666adb495">dm_grp_set_unknown</a> (<a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> **grp, const char *name, const char *value)</td></tr>
 <tr class="memdesc:gaeb83619f319b83901f74360666adb495"><td class="mdescLeft">&#160;</td><td class="mdescRight">build AVP group for SET any packet  <a href="group__API.html#gaeb83619f319b83901f74360666adb495">More...</a><br/></td></tr>
 <tr class="separator:gaeb83619f319b83901f74360666adb495"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10e894c77b2731b3b9e2168d643dcb00"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a10e894c77b2731b3b9e2168d643dcb00">dm_grp_param_notify</a> (<a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> **grp, const char *name)</td></tr>
-<tr class="separator:a10e894c77b2731b3b9e2168d643dcb00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6192b39c21943aaea598a59aff24e385"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a6192b39c21943aaea598a59aff24e385">dm_context_init</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, struct event_base *base)</td></tr>
-<tr class="separator:a6192b39c21943aaea598a59aff24e385"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16ab1efc9fb5a844b087cb4b9afd5ce3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a16ab1efc9fb5a844b087cb4b9afd5ce3">dm_context_new</a> (void *ctx, struct event_base *base)</td></tr>
-<tr class="separator:a16ab1efc9fb5a844b087cb4b9afd5ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cefeddcebd4d4acdcc0fe24be526105"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a2cefeddcebd4d4acdcc0fe24be526105">dm_context_free</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
-<tr class="separator:a2cefeddcebd4d4acdcc0fe24be526105"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad65033eba4fceae6c08ce032454eba12"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#ad65033eba4fceae6c08ce032454eba12">dm_context_set_socket</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, int socket)</td></tr>
-<tr class="separator:ad65033eba4fceae6c08ce032454eba12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab59cd4f6168092529091cd7cb0591c46"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#ab59cd4f6168092529091cd7cb0591c46">dm_context_get_socket</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
-<tr class="separator:ab59cd4f6168092529091cd7cb0591c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73ba6473cdd59fcd43eeac6571fb4976"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a73ba6473cdd59fcd43eeac6571fb4976">dm_context_set_sessionid</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint32_t sessionid)</td></tr>
-<tr class="separator:a73ba6473cdd59fcd43eeac6571fb4976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a436bf414d9c54f0e1322fc35720cd03b"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a436bf414d9c54f0e1322fc35720cd03b">dm_context_get_sessionid</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
-<tr class="separator:a436bf414d9c54f0e1322fc35720cd03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6003e57b39da5f6162ec771447ad97a6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a6003e57b39da5f6162ec771447ad97a6">dm_context_set_event_base</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, struct event_base *base)</td></tr>
-<tr class="separator:a6003e57b39da5f6162ec771447ad97a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7607efb250238a2a5a1fd92d6a702ba8"><td class="memItemLeft" align="right" valign="top">static struct event_base *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a7607efb250238a2a5a1fd92d6a702ba8">dm_context_get_event_base</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
-<tr class="separator:a7607efb250238a2a5a1fd92d6a702ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1a8c8c4af1fbf31fd26fd31eb0f489d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#aa1a8c8c4af1fbf31fd26fd31eb0f489d">dm_context_set_ev_loop</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, struct ev_loop *loop)</td></tr>
-<tr class="separator:aa1a8c8c4af1fbf31fd26fd31eb0f489d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c86479ec22fb2affb4dfc05158f0c35"><td class="memItemLeft" align="right" valign="top">static struct ev_loop *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a8c86479ec22fb2affb4dfc05158f0c35">dm_context_get_ev_loop</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
-<tr class="separator:a8c86479ec22fb2affb4dfc05158f0c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45b31b03f78167ddc748cc7fd3430add"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a45b31b03f78167ddc748cc7fd3430add">dm_create_socket</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, int type)</td></tr>
-<tr class="separator:a45b31b03f78167ddc748cc7fd3430add"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2fe86eb90a928f0c0c0481ee3a4b45f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#ab2fe86eb90a928f0c0c0481ee3a4b45f">dm_shutdown_socket</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
-<tr class="separator:ab2fe86eb90a928f0c0c0481ee3a4b45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe7c2988abcd8f617140cb8ca405fc7d"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#abe7c2988abcd8f617140cb8ca405fc7d">dm_send_start_session</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint32_t <a class="el" href="diammsg_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>, struct timeval *timeout_session, struct timeval *timeout_request)</td></tr>
-<tr class="separator:abe7c2988abcd8f617140cb8ca405fc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc9f2d383e788ae6bf76f4bbb2028e03"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#adc9f2d383e788ae6bf76f4bbb2028e03">dm_send_switch_session</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint32_t <a class="el" href="diammsg_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>, struct timeval *timeout_session, struct timeval *timeout_request)</td></tr>
-<tr class="separator:adc9f2d383e788ae6bf76f4bbb2028e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeadacca962ffd33284498b630e3d2c1"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#aeeadacca962ffd33284498b630e3d2c1">dm_send_get_session_info</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint32_t *<a class="el" href="diammsg_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>)</td></tr>
-<tr class="separator:aeeadacca962ffd33284498b630e3d2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2abf8eb9b8080a539942f2c66497552f"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a2abf8eb9b8080a539942f2c66497552f">dm_send_get_cfg_session_info</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *, uint32_t *, uint32_t *, struct timeval *)</td></tr>
-<tr class="separator:a2abf8eb9b8080a539942f2c66497552f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2246b6c5516f67d621f30908d5880d05"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a2246b6c5516f67d621f30908d5880d05">dm_send_del_instance</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *path)</td></tr>
-<tr class="separator:a2246b6c5516f67d621f30908d5880d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0cb40436c28fec8be1b1a1248e5d054"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#ad0cb40436c28fec8be1b1a1248e5d054">dm_send_find_instance</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *path, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *grp, uint16_t *inst)</td></tr>
-<tr class="separator:ad0cb40436c28fec8be1b1a1248e5d054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a870f4d976c365a2766abd0442c8a6199"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a870f4d976c365a2766abd0442c8a6199">dm_send_retrieve_enums</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *name, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> **answer)</td></tr>
-<tr class="separator:a870f4d976c365a2766abd0442c8a6199"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d938aee3c61196d8495b09122bec109"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a4d938aee3c61196d8495b09122bec109">dm_send_subscribe_notify</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
-<tr class="separator:a4d938aee3c61196d8495b09122bec109"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6179a686d2f19c399c0f0b051ef0295c"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a6179a686d2f19c399c0f0b051ef0295c">dm_send_recursive_param_notify</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint8_t isActiveNotify <a class="el" href="diammsg_8h.html#a84b8557ae255d39fcdcd87abfc5c1c47">__attribute__</a>((unused)), const char *path)</td></tr>
-<tr class="separator:a6179a686d2f19c399c0f0b051ef0295c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10d11a06651f951645983005292be512"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a10d11a06651f951645983005292be512">dm_send_packet_param_notify</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint8_t isActiveNotify <a class="el" href="diammsg_8h.html#a84b8557ae255d39fcdcd87abfc5c1c47">__attribute__</a>((unused)), <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *grp)</td></tr>
-<tr class="separator:a10d11a06651f951645983005292be512"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affe4f0a3d27e0aab86445f5a8fdca58d"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#affe4f0a3d27e0aab86445f5a8fdca58d">dm_send_get_passive_notifications</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> **answer)</td></tr>
-<tr class="separator:affe4f0a3d27e0aab86445f5a8fdca58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a914c2113ce409dc3560b20cc1cd3fa14"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a914c2113ce409dc3560b20cc1cd3fa14">dm_send_unsubscribe_notify</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
-<tr class="separator:a914c2113ce409dc3560b20cc1cd3fa14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad18e75b7d1adfe958234c778e1250d11"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#ad18e75b7d1adfe958234c778e1250d11">dm_send_end_session</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
-<tr class="separator:ad18e75b7d1adfe958234c778e1250d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f9c73a51b3c82fe43fc94e81ece2425"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a1f9c73a51b3c82fe43fc94e81ece2425">dm_send_packet_set</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *grp)</td></tr>
-<tr class="separator:a1f9c73a51b3c82fe43fc94e81ece2425"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2956aab23156aa19b3a3e550852a5a52"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a2956aab23156aa19b3a3e550852a5a52">dm_send_packet_get</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *grp, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> **answer)</td></tr>
-<tr class="separator:a2956aab23156aa19b3a3e550852a5a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2bd88e8184f357997dcfdadddb2088d"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#af2bd88e8184f357997dcfdadddb2088d">dm_send_commit</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
-<tr class="separator:af2bd88e8184f357997dcfdadddb2088d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac12eb39bfafb4a1d1439b4372bab2fec"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#ac12eb39bfafb4a1d1439b4372bab2fec">dm_send_cancel</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
-<tr class="separator:ac12eb39bfafb4a1d1439b4372bab2fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a482dc24e9aa7e4ec613560d4843f04f7"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a482dc24e9aa7e4ec613560d4843f04f7">dm_send_save</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
-<tr class="separator:a482dc24e9aa7e4ec613560d4843f04f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbb38a2a721013470042262dbc47ac7c"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#adbb38a2a721013470042262dbc47ac7c">dm_send_cmd_dump</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *path, char **data)</td></tr>
-<tr class="separator:adbb38a2a721013470042262dbc47ac7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10e894c77b2731b3b9e2168d643dcb00"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga10e894c77b2731b3b9e2168d643dcb00">dm_grp_param_notify</a> (<a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> **grp, const char *name)</td></tr>
+<tr class="memdesc:ga10e894c77b2731b3b9e2168d643dcb00"><td class="mdescLeft">&#160;</td><td class="mdescRight">build AVP group for param notify packets  <a href="group__API.html#ga10e894c77b2731b3b9e2168d643dcb00">More...</a><br/></td></tr>
+<tr class="separator:ga10e894c77b2731b3b9e2168d643dcb00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6192b39c21943aaea598a59aff24e385"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga6192b39c21943aaea598a59aff24e385">dm_context_init</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, struct event_base *base)</td></tr>
+<tr class="memdesc:ga6192b39c21943aaea598a59aff24e385"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize a new socket context  <a href="group__API.html#ga6192b39c21943aaea598a59aff24e385">More...</a><br/></td></tr>
+<tr class="separator:ga6192b39c21943aaea598a59aff24e385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16ab1efc9fb5a844b087cb4b9afd5ce3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga16ab1efc9fb5a844b087cb4b9afd5ce3">dm_context_new</a> (void *ctx, struct event_base *base)</td></tr>
+<tr class="memdesc:ga16ab1efc9fb5a844b087cb4b9afd5ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">allocate and initialize a new socket context  <a href="group__API.html#ga16ab1efc9fb5a844b087cb4b9afd5ce3">More...</a><br/></td></tr>
+<tr class="separator:ga16ab1efc9fb5a844b087cb4b9afd5ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2cefeddcebd4d4acdcc0fe24be526105"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga2cefeddcebd4d4acdcc0fe24be526105">dm_context_free</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
+<tr class="memdesc:ga2cefeddcebd4d4acdcc0fe24be526105"><td class="mdescLeft">&#160;</td><td class="mdescRight">free a socket context  <a href="group__API.html#ga2cefeddcebd4d4acdcc0fe24be526105">More...</a><br/></td></tr>
+<tr class="separator:ga2cefeddcebd4d4acdcc0fe24be526105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad65033eba4fceae6c08ce032454eba12"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gad65033eba4fceae6c08ce032454eba12">dm_context_set_socket</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, int socket)</td></tr>
+<tr class="memdesc:gad65033eba4fceae6c08ce032454eba12"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the socket in a socket context  <a href="group__API.html#gad65033eba4fceae6c08ce032454eba12">More...</a><br/></td></tr>
+<tr class="separator:gad65033eba4fceae6c08ce032454eba12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab59cd4f6168092529091cd7cb0591c46"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gab59cd4f6168092529091cd7cb0591c46">dm_context_get_socket</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
+<tr class="memdesc:gab59cd4f6168092529091cd7cb0591c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the socket from a socket context  <a href="group__API.html#gab59cd4f6168092529091cd7cb0591c46">More...</a><br/></td></tr>
+<tr class="separator:gab59cd4f6168092529091cd7cb0591c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73ba6473cdd59fcd43eeac6571fb4976"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga73ba6473cdd59fcd43eeac6571fb4976">dm_context_set_sessionid</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint32_t sessionid)</td></tr>
+<tr class="memdesc:ga73ba6473cdd59fcd43eeac6571fb4976"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the session id in a socket context  <a href="group__API.html#ga73ba6473cdd59fcd43eeac6571fb4976">More...</a><br/></td></tr>
+<tr class="separator:ga73ba6473cdd59fcd43eeac6571fb4976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga436bf414d9c54f0e1322fc35720cd03b"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga436bf414d9c54f0e1322fc35720cd03b">dm_context_get_sessionid</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
+<tr class="memdesc:ga436bf414d9c54f0e1322fc35720cd03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the session id from a socket context  <a href="group__API.html#ga436bf414d9c54f0e1322fc35720cd03b">More...</a><br/></td></tr>
+<tr class="separator:ga436bf414d9c54f0e1322fc35720cd03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6003e57b39da5f6162ec771447ad97a6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga6003e57b39da5f6162ec771447ad97a6">dm_context_set_event_base</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, struct event_base *base)</td></tr>
+<tr class="memdesc:ga6003e57b39da5f6162ec771447ad97a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">set libev's libevent compatiblity event_base in a socket context  <a href="group__API.html#ga6003e57b39da5f6162ec771447ad97a6">More...</a><br/></td></tr>
+<tr class="separator:ga6003e57b39da5f6162ec771447ad97a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7607efb250238a2a5a1fd92d6a702ba8"><td class="memItemLeft" align="right" valign="top">static struct event_base *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga7607efb250238a2a5a1fd92d6a702ba8">dm_context_get_event_base</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
+<tr class="memdesc:ga7607efb250238a2a5a1fd92d6a702ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">get libev's libevent compatiblity event_base from a socket context  <a href="group__API.html#ga7607efb250238a2a5a1fd92d6a702ba8">More...</a><br/></td></tr>
+<tr class="separator:ga7607efb250238a2a5a1fd92d6a702ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1a8c8c4af1fbf31fd26fd31eb0f489d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gaa1a8c8c4af1fbf31fd26fd31eb0f489d">dm_context_set_ev_loop</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, struct ev_loop *loop)</td></tr>
+<tr class="memdesc:gaa1a8c8c4af1fbf31fd26fd31eb0f489d"><td class="mdescLeft">&#160;</td><td class="mdescRight">set libev's ev_loop in a socket context  <a href="group__API.html#gaa1a8c8c4af1fbf31fd26fd31eb0f489d">More...</a><br/></td></tr>
+<tr class="separator:gaa1a8c8c4af1fbf31fd26fd31eb0f489d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c86479ec22fb2affb4dfc05158f0c35"><td class="memItemLeft" align="right" valign="top">static struct ev_loop *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga8c86479ec22fb2affb4dfc05158f0c35">dm_context_get_ev_loop</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
+<tr class="memdesc:ga8c86479ec22fb2affb4dfc05158f0c35"><td class="mdescLeft">&#160;</td><td class="mdescRight">get libev's ev_loop from a socket context  <a href="group__API.html#ga8c86479ec22fb2affb4dfc05158f0c35">More...</a><br/></td></tr>
+<tr class="separator:ga8c86479ec22fb2affb4dfc05158f0c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45b31b03f78167ddc748cc7fd3430add"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga45b31b03f78167ddc748cc7fd3430add">dm_create_socket</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, int type)</td></tr>
+<tr class="memdesc:ga45b31b03f78167ddc748cc7fd3430add"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a socket in a socket context  <a href="group__API.html#ga45b31b03f78167ddc748cc7fd3430add">More...</a><br/></td></tr>
+<tr class="separator:ga45b31b03f78167ddc748cc7fd3430add"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2fe86eb90a928f0c0c0481ee3a4b45f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gab2fe86eb90a928f0c0c0481ee3a4b45f">dm_shutdown_socket</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
+<tr class="memdesc:gab2fe86eb90a928f0c0c0481ee3a4b45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">shut down the socket in a socket context  <a href="group__API.html#gab2fe86eb90a928f0c0c0481ee3a4b45f">More...</a><br/></td></tr>
+<tr class="separator:gab2fe86eb90a928f0c0c0481ee3a4b45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe7c2988abcd8f617140cb8ca405fc7d"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gabe7c2988abcd8f617140cb8ca405fc7d">dm_send_start_session</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint32_t <a class="el" href="diammsg_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>, struct timeval *timeout_session, struct timeval *timeout_request)</td></tr>
+<tr class="memdesc:gabe7c2988abcd8f617140cb8ca405fc7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous start session request.  <a href="group__API.html#gabe7c2988abcd8f617140cb8ca405fc7d">More...</a><br/></td></tr>
+<tr class="separator:gabe7c2988abcd8f617140cb8ca405fc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc9f2d383e788ae6bf76f4bbb2028e03"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gadc9f2d383e788ae6bf76f4bbb2028e03">dm_send_switch_session</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint32_t <a class="el" href="diammsg_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>, struct timeval *timeout_session, struct timeval *timeout_request)</td></tr>
+<tr class="memdesc:gadc9f2d383e788ae6bf76f4bbb2028e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous switch session request.  <a href="group__API.html#gadc9f2d383e788ae6bf76f4bbb2028e03">More...</a><br/></td></tr>
+<tr class="separator:gadc9f2d383e788ae6bf76f4bbb2028e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeeadacca962ffd33284498b630e3d2c1"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gaeeadacca962ffd33284498b630e3d2c1">dm_send_get_session_info</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint32_t *<a class="el" href="diammsg_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>)</td></tr>
+<tr class="memdesc:gaeeadacca962ffd33284498b630e3d2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous get session info request.  <a href="group__API.html#gaeeadacca962ffd33284498b630e3d2c1">More...</a><br/></td></tr>
+<tr class="separator:gaeeadacca962ffd33284498b630e3d2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga437d2b43e02f8379bf03c41e4a989ef1"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga437d2b43e02f8379bf03c41e4a989ef1">dm_send_get_cfg_session_info</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint32_t *sessionid, uint32_t *<a class="el" href="diammsg_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>, struct timeval *timeout)</td></tr>
+<tr class="memdesc:ga437d2b43e02f8379bf03c41e4a989ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous get config session info request.  <a href="group__API.html#ga437d2b43e02f8379bf03c41e4a989ef1">More...</a><br/></td></tr>
+<tr class="separator:ga437d2b43e02f8379bf03c41e4a989ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2246b6c5516f67d621f30908d5880d05"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga2246b6c5516f67d621f30908d5880d05">dm_send_del_instance</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *path)</td></tr>
+<tr class="memdesc:ga2246b6c5516f67d621f30908d5880d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous delete instance request.  <a href="group__API.html#ga2246b6c5516f67d621f30908d5880d05">More...</a><br/></td></tr>
+<tr class="separator:ga2246b6c5516f67d621f30908d5880d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0cb40436c28fec8be1b1a1248e5d054"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gad0cb40436c28fec8be1b1a1248e5d054">dm_send_find_instance</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *path, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *grp, uint16_t *inst)</td></tr>
+<tr class="memdesc:gad0cb40436c28fec8be1b1a1248e5d054"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous find instance request.  <a href="group__API.html#gad0cb40436c28fec8be1b1a1248e5d054">More...</a><br/></td></tr>
+<tr class="separator:gad0cb40436c28fec8be1b1a1248e5d054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga870f4d976c365a2766abd0442c8a6199"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga870f4d976c365a2766abd0442c8a6199">dm_send_retrieve_enums</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *name, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> **answer)</td></tr>
+<tr class="memdesc:ga870f4d976c365a2766abd0442c8a6199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous retrieve enums request.  <a href="group__API.html#ga870f4d976c365a2766abd0442c8a6199">More...</a><br/></td></tr>
+<tr class="separator:ga870f4d976c365a2766abd0442c8a6199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d938aee3c61196d8495b09122bec109"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga4d938aee3c61196d8495b09122bec109">dm_send_subscribe_notify</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
+<tr class="memdesc:ga4d938aee3c61196d8495b09122bec109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous subscribe to notifications request.  <a href="group__API.html#ga4d938aee3c61196d8495b09122bec109">More...</a><br/></td></tr>
+<tr class="separator:ga4d938aee3c61196d8495b09122bec109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52fc5a97140df12648c2dc71116e4ebf"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga52fc5a97140df12648c2dc71116e4ebf">dm_send_recursive_param_notify</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint8_t isActiveNotify <a class="el" href="diammsg_8h.html#a84b8557ae255d39fcdcd87abfc5c1c47">__attribute__</a>((unused)),const char *path)</td></tr>
+<tr class="memdesc:ga52fc5a97140df12648c2dc71116e4ebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous set notification on parameters and all child parameters.  <a href="group__API.html#ga52fc5a97140df12648c2dc71116e4ebf">More...</a><br/></td></tr>
+<tr class="separator:ga52fc5a97140df12648c2dc71116e4ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc58eec244894c3465c46620f4298089"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gacc58eec244894c3465c46620f4298089">dm_send_packet_param_notify</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint8_t isActiveNotify <a class="el" href="diammsg_8h.html#a84b8557ae255d39fcdcd87abfc5c1c47">__attribute__</a>((unused)),<a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *grp)</td></tr>
+<tr class="memdesc:gacc58eec244894c3465c46620f4298089"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous set notification on a parameter.  <a href="group__API.html#gacc58eec244894c3465c46620f4298089">More...</a><br/></td></tr>
+<tr class="separator:gacc58eec244894c3465c46620f4298089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaffe4f0a3d27e0aab86445f5a8fdca58d"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gaffe4f0a3d27e0aab86445f5a8fdca58d">dm_send_get_passive_notifications</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> **answer)</td></tr>
+<tr class="memdesc:gaffe4f0a3d27e0aab86445f5a8fdca58d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous retrieve all pending passive notifications.  <a href="group__API.html#gaffe4f0a3d27e0aab86445f5a8fdca58d">More...</a><br/></td></tr>
+<tr class="separator:gaffe4f0a3d27e0aab86445f5a8fdca58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga914c2113ce409dc3560b20cc1cd3fa14"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga914c2113ce409dc3560b20cc1cd3fa14">dm_send_unsubscribe_notify</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
+<tr class="memdesc:ga914c2113ce409dc3560b20cc1cd3fa14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous unsubscribe from all notifications request.  <a href="group__API.html#ga914c2113ce409dc3560b20cc1cd3fa14">More...</a><br/></td></tr>
+<tr class="separator:ga914c2113ce409dc3560b20cc1cd3fa14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad18e75b7d1adfe958234c778e1250d11"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gad18e75b7d1adfe958234c778e1250d11">dm_send_end_session</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
+<tr class="memdesc:gad18e75b7d1adfe958234c778e1250d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous send session end request.  <a href="group__API.html#gad18e75b7d1adfe958234c778e1250d11">More...</a><br/></td></tr>
+<tr class="separator:gad18e75b7d1adfe958234c778e1250d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f9c73a51b3c82fe43fc94e81ece2425"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga1f9c73a51b3c82fe43fc94e81ece2425">dm_send_packet_set</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *grp)</td></tr>
+<tr class="memdesc:ga1f9c73a51b3c82fe43fc94e81ece2425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous send set end request.  <a href="group__API.html#ga1f9c73a51b3c82fe43fc94e81ece2425">More...</a><br/></td></tr>
+<tr class="separator:ga1f9c73a51b3c82fe43fc94e81ece2425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2956aab23156aa19b3a3e550852a5a52"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga2956aab23156aa19b3a3e550852a5a52">dm_send_packet_get</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *grp, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> **answer)</td></tr>
+<tr class="memdesc:ga2956aab23156aa19b3a3e550852a5a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous send get end request.  <a href="group__API.html#ga2956aab23156aa19b3a3e550852a5a52">More...</a><br/></td></tr>
+<tr class="separator:ga2956aab23156aa19b3a3e550852a5a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2bd88e8184f357997dcfdadddb2088d"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gaf2bd88e8184f357997dcfdadddb2088d">dm_send_commit</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
+<tr class="memdesc:gaf2bd88e8184f357997dcfdadddb2088d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous send commit request.  <a href="group__API.html#gaf2bd88e8184f357997dcfdadddb2088d">More...</a><br/></td></tr>
+<tr class="separator:gaf2bd88e8184f357997dcfdadddb2088d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac12eb39bfafb4a1d1439b4372bab2fec"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gac12eb39bfafb4a1d1439b4372bab2fec">dm_send_cancel</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
+<tr class="memdesc:gac12eb39bfafb4a1d1439b4372bab2fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous send cancel request.  <a href="group__API.html#gac12eb39bfafb4a1d1439b4372bab2fec">More...</a><br/></td></tr>
+<tr class="separator:gac12eb39bfafb4a1d1439b4372bab2fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga482dc24e9aa7e4ec613560d4843f04f7"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga482dc24e9aa7e4ec613560d4843f04f7">dm_send_save</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx)</td></tr>
+<tr class="memdesc:ga482dc24e9aa7e4ec613560d4843f04f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous send save request.  <a href="group__API.html#ga482dc24e9aa7e4ec613560d4843f04f7">More...</a><br/></td></tr>
+<tr class="separator:ga482dc24e9aa7e4ec613560d4843f04f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadbb38a2a721013470042262dbc47ac7c"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gadbb38a2a721013470042262dbc47ac7c">dm_send_cmd_dump</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *path, char **data)</td></tr>
+<tr class="memdesc:gadbb38a2a721013470042262dbc47ac7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchonous send dump request.  <a href="group__API.html#gadbb38a2a721013470042262dbc47ac7c">More...</a><br/></td></tr>
+<tr class="separator:gadbb38a2a721013470042262dbc47ac7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40ab68e6c283313841ade09b09b0d2c4"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a40ab68e6c283313841ade09b09b0d2c4">dm_send_cmd_conf_save</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *server)</td></tr>
 <tr class="separator:a40ab68e6c283313841ade09b09b0d2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a125c3bf8823d1693a3ea2fb340feca8d"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a125c3bf8823d1693a3ea2fb340feca8d">dm_send_cmd_conf_restore</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *server)</td></tr>
 <tr class="separator:a125c3bf8823d1693a3ea2fb340feca8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3a80d3daec7aa9847e7b036ef5fc3e1"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#ab3a80d3daec7aa9847e7b036ef5fc3e1">dm_register_start_session</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint32_t <a class="el" href="diammsg_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>, struct timeval *timeout_session, struct timeval *timeout_request, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
-<tr class="separator:ab3a80d3daec7aa9847e7b036ef5fc3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f17ea1a09867f143fc52e5a24c68f61"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a2f17ea1a09867f143fc52e5a24c68f61">dm_register_switch_session</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint32_t <a class="el" href="diammsg_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>, struct timeval *timeout_session, struct timeval *timeout_request, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
-<tr class="separator:a2f17ea1a09867f143fc52e5a24c68f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a617537ce5dc4372b14e6028637d4b1b1"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a617537ce5dc4372b14e6028637d4b1b1">dm_register_get_session_info</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
-<tr class="separator:a617537ce5dc4372b14e6028637d4b1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1bfd6385814d5ed8f4ca6d82494c4ac"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#ad1bfd6385814d5ed8f4ca6d82494c4ac">dm_register_get_cfg_session_info</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>, void *)</td></tr>
-<tr class="separator:ad1bfd6385814d5ed8f4ca6d82494c4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20f729f96450e3a1e2121d7a806c7d4c"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a20f729f96450e3a1e2121d7a806c7d4c">dm_register_del_instance</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *path, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
-<tr class="separator:a20f729f96450e3a1e2121d7a806c7d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29bf9736252215c659b7fc1710857fdc"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a29bf9736252215c659b7fc1710857fdc">dm_register_find_instance</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *path, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *grp, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
-<tr class="separator:a29bf9736252215c659b7fc1710857fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a980d203e58be413f0bb34edea1575d12"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a980d203e58be413f0bb34edea1575d12">dm_register_retrieve_enums</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *name, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
-<tr class="separator:a980d203e58be413f0bb34edea1575d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17d1ff6ba277b3eb4a1e38fc72b945fb"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a17d1ff6ba277b3eb4a1e38fc72b945fb">dm_register_unsubscribe_notify</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
-<tr class="separator:a17d1ff6ba277b3eb4a1e38fc72b945fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3488908cc2bb3e16efb29830f0695723"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a3488908cc2bb3e16efb29830f0695723">dm_register_recursive_param_notify</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint8_t isActiveNotify, const char *path, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
-<tr class="separator:a3488908cc2bb3e16efb29830f0695723"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79f2a4522f0d25b84b563984ef3810f2"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a79f2a4522f0d25b84b563984ef3810f2">dm_register_packet_param_notify</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint8_t isActiveNotify, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *grp, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
-<tr class="separator:a79f2a4522f0d25b84b563984ef3810f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf212a0fc24fcd550d33540a16d2ee35"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#abf212a0fc24fcd550d33540a16d2ee35">dm_register_get_passive_notifications</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
-<tr class="separator:abf212a0fc24fcd550d33540a16d2ee35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3254114deca2fe7051c0fd75205e3ed9"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a3254114deca2fe7051c0fd75205e3ed9">dm_register_end_session</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
-<tr class="separator:a3254114deca2fe7051c0fd75205e3ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3ff2715d6fcababe70b885237d5cf5c"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#aa3ff2715d6fcababe70b885237d5cf5c">dm_register_packet_set</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *grp, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
-<tr class="separator:aa3ff2715d6fcababe70b885237d5cf5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a963944a3c9b36d0b3547073edf21a2ce"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a963944a3c9b36d0b3547073edf21a2ce">dm_register_packet_get</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *grp, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
-<tr class="separator:a963944a3c9b36d0b3547073edf21a2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae251e86528eb8bb574bd8d1d7e7a7119"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#ae251e86528eb8bb574bd8d1d7e7a7119">dm_register_commit</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
-<tr class="separator:ae251e86528eb8bb574bd8d1d7e7a7119"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b5fb99f2e2e0e2b5880cd0c9d3470ec"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a3b5fb99f2e2e0e2b5880cd0c9d3470ec">dm_register_cancel</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
-<tr class="separator:a3b5fb99f2e2e0e2b5880cd0c9d3470ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fb02735fda0e2de04bf220f4db003ee"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a8fb02735fda0e2de04bf220f4db003ee">dm_register_save</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
-<tr class="separator:a8fb02735fda0e2de04bf220f4db003ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0b1beb8bfd0d9c72a44e062d5adce7a"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#ad0b1beb8bfd0d9c72a44e062d5adce7a">dm_register_cmd_dump</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *path, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
-<tr class="separator:ad0b1beb8bfd0d9c72a44e062d5adce7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3a80d3daec7aa9847e7b036ef5fc3e1"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gab3a80d3daec7aa9847e7b036ef5fc3e1">dm_register_start_session</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint32_t <a class="el" href="diammsg_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>, struct timeval *timeout_session, struct timeval *timeout_request, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
+<tr class="memdesc:gab3a80d3daec7aa9847e7b036ef5fc3e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchonous start session request.  <a href="group__API.html#gab3a80d3daec7aa9847e7b036ef5fc3e1">More...</a><br/></td></tr>
+<tr class="separator:gab3a80d3daec7aa9847e7b036ef5fc3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f17ea1a09867f143fc52e5a24c68f61"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga2f17ea1a09867f143fc52e5a24c68f61">dm_register_switch_session</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint32_t <a class="el" href="diammsg_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>, struct timeval *timeout_session, struct timeval *timeout_request, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
+<tr class="memdesc:ga2f17ea1a09867f143fc52e5a24c68f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchonous switch session request.  <a href="group__API.html#ga2f17ea1a09867f143fc52e5a24c68f61">More...</a><br/></td></tr>
+<tr class="separator:ga2f17ea1a09867f143fc52e5a24c68f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga617537ce5dc4372b14e6028637d4b1b1"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga617537ce5dc4372b14e6028637d4b1b1">dm_register_get_session_info</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
+<tr class="memdesc:ga617537ce5dc4372b14e6028637d4b1b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchonous get session info request.  <a href="group__API.html#ga617537ce5dc4372b14e6028637d4b1b1">More...</a><br/></td></tr>
+<tr class="separator:ga617537ce5dc4372b14e6028637d4b1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98f7e4ec3513b277bac3958226ad4cf6"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga98f7e4ec3513b277bac3958226ad4cf6">dm_register_get_cfg_session_info</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
+<tr class="memdesc:ga98f7e4ec3513b277bac3958226ad4cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchonous get config session info request.  <a href="group__API.html#ga98f7e4ec3513b277bac3958226ad4cf6">More...</a><br/></td></tr>
+<tr class="separator:ga98f7e4ec3513b277bac3958226ad4cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20f729f96450e3a1e2121d7a806c7d4c"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga20f729f96450e3a1e2121d7a806c7d4c">dm_register_del_instance</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *path, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
+<tr class="memdesc:ga20f729f96450e3a1e2121d7a806c7d4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchonous delete instance request.  <a href="group__API.html#ga20f729f96450e3a1e2121d7a806c7d4c">More...</a><br/></td></tr>
+<tr class="separator:ga20f729f96450e3a1e2121d7a806c7d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29bf9736252215c659b7fc1710857fdc"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga29bf9736252215c659b7fc1710857fdc">dm_register_find_instance</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *path, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *grp, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
+<tr class="memdesc:ga29bf9736252215c659b7fc1710857fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchonous find instance request.  <a href="group__API.html#ga29bf9736252215c659b7fc1710857fdc">More...</a><br/></td></tr>
+<tr class="separator:ga29bf9736252215c659b7fc1710857fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga980d203e58be413f0bb34edea1575d12"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga980d203e58be413f0bb34edea1575d12">dm_register_retrieve_enums</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *name, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
+<tr class="memdesc:ga980d203e58be413f0bb34edea1575d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchonous retrieve enums request.  <a href="group__API.html#ga980d203e58be413f0bb34edea1575d12">More...</a><br/></td></tr>
+<tr class="separator:ga980d203e58be413f0bb34edea1575d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17d1ff6ba277b3eb4a1e38fc72b945fb"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga17d1ff6ba277b3eb4a1e38fc72b945fb">dm_register_unsubscribe_notify</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
+<tr class="memdesc:ga17d1ff6ba277b3eb4a1e38fc72b945fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchonous unsubscribe from all notifications request.  <a href="group__API.html#ga17d1ff6ba277b3eb4a1e38fc72b945fb">More...</a><br/></td></tr>
+<tr class="separator:ga17d1ff6ba277b3eb4a1e38fc72b945fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3488908cc2bb3e16efb29830f0695723"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga3488908cc2bb3e16efb29830f0695723">dm_register_recursive_param_notify</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint8_t isActiveNotify, const char *path, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
+<tr class="memdesc:ga3488908cc2bb3e16efb29830f0695723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchonous set notification on parameters and all child parameters.  <a href="group__API.html#ga3488908cc2bb3e16efb29830f0695723">More...</a><br/></td></tr>
+<tr class="separator:ga3488908cc2bb3e16efb29830f0695723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79f2a4522f0d25b84b563984ef3810f2"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga79f2a4522f0d25b84b563984ef3810f2">dm_register_packet_param_notify</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, uint8_t isActiveNotify, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *grp, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
+<tr class="memdesc:ga79f2a4522f0d25b84b563984ef3810f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchonous set notification on a parameter.  <a href="group__API.html#ga79f2a4522f0d25b84b563984ef3810f2">More...</a><br/></td></tr>
+<tr class="separator:ga79f2a4522f0d25b84b563984ef3810f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf212a0fc24fcd550d33540a16d2ee35"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gabf212a0fc24fcd550d33540a16d2ee35">dm_register_get_passive_notifications</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
+<tr class="memdesc:gabf212a0fc24fcd550d33540a16d2ee35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchonous retrieve all pending passive notifications.  <a href="group__API.html#gabf212a0fc24fcd550d33540a16d2ee35">More...</a><br/></td></tr>
+<tr class="separator:gabf212a0fc24fcd550d33540a16d2ee35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3254114deca2fe7051c0fd75205e3ed9"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga3254114deca2fe7051c0fd75205e3ed9">dm_register_end_session</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
+<tr class="memdesc:ga3254114deca2fe7051c0fd75205e3ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchonous send session end request.  <a href="group__API.html#ga3254114deca2fe7051c0fd75205e3ed9">More...</a><br/></td></tr>
+<tr class="separator:ga3254114deca2fe7051c0fd75205e3ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3ff2715d6fcababe70b885237d5cf5c"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gaa3ff2715d6fcababe70b885237d5cf5c">dm_register_packet_set</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *grp, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
+<tr class="memdesc:gaa3ff2715d6fcababe70b885237d5cf5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchonous send set end request.  <a href="group__API.html#gaa3ff2715d6fcababe70b885237d5cf5c">More...</a><br/></td></tr>
+<tr class="separator:gaa3ff2715d6fcababe70b885237d5cf5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga963944a3c9b36d0b3547073edf21a2ce"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga963944a3c9b36d0b3547073edf21a2ce">dm_register_packet_get</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *grp, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
+<tr class="memdesc:ga963944a3c9b36d0b3547073edf21a2ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchonous send get end request.  <a href="group__API.html#ga963944a3c9b36d0b3547073edf21a2ce">More...</a><br/></td></tr>
+<tr class="separator:ga963944a3c9b36d0b3547073edf21a2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae251e86528eb8bb574bd8d1d7e7a7119"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gae251e86528eb8bb574bd8d1d7e7a7119">dm_register_commit</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
+<tr class="memdesc:gae251e86528eb8bb574bd8d1d7e7a7119"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchonous send commit request.  <a href="group__API.html#gae251e86528eb8bb574bd8d1d7e7a7119">More...</a><br/></td></tr>
+<tr class="separator:gae251e86528eb8bb574bd8d1d7e7a7119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b5fb99f2e2e0e2b5880cd0c9d3470ec"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga3b5fb99f2e2e0e2b5880cd0c9d3470ec">dm_register_cancel</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
+<tr class="memdesc:ga3b5fb99f2e2e0e2b5880cd0c9d3470ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchonous send cancel request.  <a href="group__API.html#ga3b5fb99f2e2e0e2b5880cd0c9d3470ec">More...</a><br/></td></tr>
+<tr class="separator:ga3b5fb99f2e2e0e2b5880cd0c9d3470ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fb02735fda0e2de04bf220f4db003ee"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#ga8fb02735fda0e2de04bf220f4db003ee">dm_register_save</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
+<tr class="memdesc:ga8fb02735fda0e2de04bf220f4db003ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchonous send save request.  <a href="group__API.html#ga8fb02735fda0e2de04bf220f4db003ee">More...</a><br/></td></tr>
+<tr class="separator:ga8fb02735fda0e2de04bf220f4db003ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0b1beb8bfd0d9c72a44e062d5adce7a"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API.html#gad0b1beb8bfd0d9c72a44e062d5adce7a">dm_register_cmd_dump</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *path, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
+<tr class="memdesc:gad0b1beb8bfd0d9c72a44e062d5adce7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchonous send dump request.  <a href="group__API.html#gad0b1beb8bfd0d9c72a44e062d5adce7a">More...</a><br/></td></tr>
+<tr class="separator:gad0b1beb8bfd0d9c72a44e062d5adce7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61b6ecbf5e4622b2358031118a9a3d4d"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#a61b6ecbf5e4622b2358031118a9a3d4d">dm_register_cmd_conf_save</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *server, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
 <tr class="separator:a61b6ecbf5e4622b2358031118a9a3d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd0db7cbf6672652e44f0fef32d22cf6"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dmconfig_8h.html#afd0db7cbf6672652e44f0fef32d22cf6">dm_register_cmd_conf_restore</a> (<a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, const char *server, <a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a> callback, void *callback_ud)</td></tr>
@@ -1152,428 +1203,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a2cefeddcebd4d4acdcc0fe24be526105"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void dm_context_free </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01156">1156</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8c86479ec22fb2affb4dfc05158f0c35"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static struct ev_loop * dm_context_get_ev_loop </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01204">1204</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="dmconfig_8h_source.html#l00161">dmContext::evloop</a>.</p>
-
-<p>Referenced by <a class="el" href="dmconfig_8c_source.html#l00734">dm_generic_send_request()</a>, and <a class="el" href="dmconfig_8c_source.html#l00687">dm_init_socket()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7607efb250238a2a5a1fd92d6a702ba8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static struct event_base * dm_context_get_event_base </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01192">1192</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="dmconfig_8h_source.html#l00161">dmContext::evloop</a>.</p>
-
-<p>Referenced by <a class="el" href="dmconfig_8c_source.html#l00389">dm_generic_register_request()</a>, <a class="el" href="dmconfig_8c_source.html#l00734">dm_generic_send_request()</a>, <a class="el" href="dmconfig_8c_source.html#l00687">dm_init_socket()</a>, <a class="el" href="dmconfig_8c_source.html#l00304">dm_register_connect_callback()</a>, and <a class="el" href="dmconfig_8c_source.html#l01020">writeEvent()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a436bf414d9c54f0e1322fc35720cd03b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_context_get_sessionid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01180">1180</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="dmconfig_8h_source.html#l00155">dmContext::sessionid</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l00791">Lua_generic_get_sessionid()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab59cd4f6168092529091cd7cb0591c46"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int dm_context_get_socket </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01168">1168</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="dmconfig_8h_source.html#l00154">dmContext::socket</a>.</p>
-
-<p>Referenced by <a class="el" href="dmconfig_8c_source.html#l00304">dm_register_connect_callback()</a>, <a class="el" href="luawrapper_8c_source.html#l02138">dmcontext_events_gc()</a>, and <a class="el" href="luawrapper_8c_source.html#l02126">dmcontext_sequential_gc()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6192b39c21943aaea598a59aff24e385"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void dm_context_init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct event_base *&#160;</td>
-          <td class="paramname"><em>base</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01137">1137</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="dmconfig_8h_source.html#l01186">dm_context_set_event_base()</a>.</p>
-
-<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l01144">dm_context_new()</a>, and <a class="el" href="luawrapper_8c_source.html#l00596">Lua_init_eval()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a16ab1efc9fb5a844b087cb4b9afd5ce3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> * dm_context_new </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct event_base *&#160;</td>
-          <td class="paramname"><em>base</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01144">1144</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="dmconfig_8h_source.html#l01137">dm_context_init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa1a8c8c4af1fbf31fd26fd31eb0f489d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void dm_context_set_ev_loop </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct ev_loop *&#160;</td>
-          <td class="paramname"><em>loop</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01198">1198</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="dmconfig_8h_source.html#l00161">dmContext::evloop</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6003e57b39da5f6162ec771447ad97a6"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void dm_context_set_event_base </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct event_base *&#160;</td>
-          <td class="paramname"><em>base</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01186">1186</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="dmconfig_8h_source.html#l00161">dmContext::evloop</a>.</p>
-
-<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l01137">dm_context_init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a73ba6473cdd59fcd43eeac6571fb4976"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void dm_context_set_sessionid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>sessionid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01174">1174</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="dmconfig_8h_source.html#l00155">dmContext::sessionid</a>.</p>
-
-<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l01616">dm_decode_start_session()</a>, <a class="el" href="dmconfig_8h_source.html#l01365">dm_send_end_session()</a>, <a class="el" href="luawrapper_8c_source.html#l00469">generic_Lua_callback()</a>, and <a class="el" href="luawrapper_8c_source.html#l00760">Lua_generic_set_sessionid()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad65033eba4fceae6c08ce032454eba12"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void dm_context_set_socket </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>socket</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01162">1162</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="dmconfig_8h_source.html#l00154">dmContext::socket</a>.</p>
-
-<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l01210">dm_create_socket()</a>, and <a class="el" href="luawrapper_8c_source.html#l00733">Lua_generic_shutdown()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a45b31b03f78167ddc748cc7fd3430add"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_create_socket </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01210">1210</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="dmconfig_8h_source.html#l01162">dm_context_set_socket()</a>, <a class="el" href="codes_8h_source.html#l00054">RC_ERR_CONNECTION</a>, and <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>.</p>
-
-<p>Referenced by <a class="el" href="dmconfig_8c_source.html#l00687">dm_init_socket()</a>, and <a class="el" href="luawrapper_8c_source.html#l00639">LUA_SIG()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ae6d58e30e9d85fc3874c4c4a00735b1e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1606,7 +1235,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01915">1915</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02439">2439</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00075">AVP_ABSTICKS</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00443">diam_get_int64_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
@@ -1644,9 +1273,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01644">1644</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02168">2168</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
-<p>References <a class="el" href="dmconfig_8h_source.html#l01686">dm_decode_uint16()</a>.</p>
+<p>References <a class="el" href="dmconfig_8h_source.html#l02210">dm_decode_uint16()</a>.</p>
 
 <p>Referenced by <a class="el" href="dmconfig_8c_source.html#l01353">dm_send_add_instance()</a>.</p>
 
@@ -1684,7 +1313,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01855">1855</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02379">2379</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00047">AVP_ADDRESS</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8c_source.html#l00300">diam_get_address_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
@@ -1728,7 +1357,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01965">1965</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02489">2489</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00078">AVP_BINARY</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
@@ -1766,7 +1395,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01837">1837</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02361">2361</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00048">AVP_BOOL</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00418">diam_get_uint8_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
@@ -1804,9 +1433,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01656">1656</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02180">2180</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
-<p>References <a class="el" href="dmconfig_8h_source.html#l01670">dm_decode_string()</a>.</p>
+<p>References <a class="el" href="dmconfig_8h_source.html#l02194">dm_decode_string()</a>.</p>
 
 </div>
 </div>
@@ -1842,7 +1471,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02019">2019</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02543">2543</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00080">AVP_CONTAINER</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8c_source.html#l00173">diam_decode_avpgrp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00056">RC_ERR_ALLOC</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
@@ -1880,7 +1509,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01820">1820</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02344">2344</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00043">AVP_COUNTER</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00438">diam_get_uint32_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
@@ -1918,7 +1547,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01880">1880</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02404">2404</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00049">AVP_DATE</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00453">diam_get_time_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
@@ -1956,7 +1585,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01805">1805</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02329">2329</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00045">AVP_ENUM</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00056">RC_ERR_ALLOC</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
@@ -1994,7 +1623,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01788">1788</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02312">2312</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00044">AVP_ENUMID</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00433">diam_get_int32_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
@@ -2032,9 +1661,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01994">1994</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02518">2518</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
-<p>References <a class="el" href="dmconfig_8h_source.html#l01670">dm_decode_string()</a>.</p>
+<p>References <a class="el" href="dmconfig_8h_source.html#l02194">dm_decode_string()</a>.</p>
 
 <p>Referenced by <a class="el" href="luawrapper_8c_source.html#l00376">Lua_decode_retrieve_enums()</a>.</p>
 
@@ -2072,11 +1701,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01650">1650</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02174">2174</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
-<p>References <a class="el" href="dmconfig_8h_source.html#l01686">dm_decode_uint16()</a>.</p>
+<p>References <a class="el" href="dmconfig_8h_source.html#l02210">dm_decode_uint16()</a>.</p>
 
-<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l01300">dm_send_find_instance()</a>.</p>
+<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l01478">dm_send_find_instance()</a>.</p>
 
 </div>
 </div>
@@ -2124,11 +1753,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01635">1635</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02159">2159</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
-<p>References <a class="el" href="dmconfig_8h_source.html#l01771">dm_decode_sessionid()</a>, <a class="el" href="dmconfig_8h_source.html#l01897">dm_decode_timeval()</a>, <a class="el" href="dmconfig_8h_source.html#l01703">dm_decode_uint32()</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, and <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>.</p>
+<p>References <a class="el" href="dmconfig_8h_source.html#l02295">dm_decode_sessionid()</a>, <a class="el" href="dmconfig_8h_source.html#l02421">dm_decode_timeval()</a>, <a class="el" href="dmconfig_8h_source.html#l02227">dm_decode_uint32()</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, and <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>.</p>
 
-<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l01279">dm_send_get_cfg_session_info()</a>, and <a class="el" href="luawrapper_8c_source.html#l00469">generic_Lua_callback()</a>.</p>
+<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l01435">dm_send_get_cfg_session_info()</a>, and <a class="el" href="luawrapper_8c_source.html#l00469">generic_Lua_callback()</a>.</p>
 
 </div>
 </div>
@@ -2164,11 +1793,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01629">1629</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02153">2153</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
-<p>References <a class="el" href="dmconfig_8h_source.html#l01703">dm_decode_uint32()</a>.</p>
+<p>References <a class="el" href="dmconfig_8h_source.html#l02227">dm_decode_uint32()</a>.</p>
 
-<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l01265">dm_send_get_session_info()</a>, and <a class="el" href="luawrapper_8c_source.html#l00158">Lua_decode_get_session_info()</a>.</p>
+<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l01407">dm_send_get_session_info()</a>, and <a class="el" href="luawrapper_8c_source.html#l00158">Lua_decode_get_session_info()</a>.</p>
 
 </div>
 </div>
@@ -2204,9 +1833,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02049">2049</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02573">2573</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
-<p>References <a class="el" href="dmconfig_8h_source.html#l01949">dm_decode_path()</a>.</p>
+<p>References <a class="el" href="dmconfig_8h_source.html#l02473">dm_decode_path()</a>.</p>
 
 <p>Referenced by <a class="el" href="luawrapper_8c_source.html#l00394">Lua_decode_notifications()</a>.</p>
 
@@ -2244,9 +1873,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02043">2043</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02567">2567</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
-<p>References <a class="el" href="dmconfig_8h_source.html#l01949">dm_decode_path()</a>.</p>
+<p>References <a class="el" href="dmconfig_8h_source.html#l02473">dm_decode_path()</a>.</p>
 
 <p>Referenced by <a class="el" href="luawrapper_8c_source.html#l00394">Lua_decode_notifications()</a>.</p>
 
@@ -2284,7 +1913,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01720">1720</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02244">2244</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00097">AVP_INT32</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00433">diam_get_int32_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
@@ -2322,7 +1951,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01754">1754</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02278">2278</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00100">AVP_INT64</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00443">diam_get_int64_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
@@ -2414,9 +2043,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02036">2036</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02560">2560</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
-<p>References <a class="el" href="dmconfig_8h_source.html#l02000">dm_decode_type_path()</a>.</p>
+<p>References <a class="el" href="dmconfig_8h_source.html#l02524">dm_decode_type_path()</a>.</p>
 
 <p>Referenced by <a class="el" href="luawrapper_8c_source.html#l00394">Lua_decode_notifications()</a>.</p>
 
@@ -2454,11 +2083,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01949">1949</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02473">2473</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00041">AVP_PATH</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00056">RC_ERR_ALLOC</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
-<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l02049">dm_decode_instance_created()</a>, and <a class="el" href="dmconfig_8h_source.html#l02043">dm_decode_instance_deleted()</a>.</p>
+<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l02573">dm_decode_instance_created()</a>, and <a class="el" href="dmconfig_8h_source.html#l02567">dm_decode_instance_deleted()</a>.</p>
 
 </div>
 </div>
@@ -2494,7 +2123,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01932">1932</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02456">2456</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00076">AVP_RELTICKS</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00443">diam_get_int64_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
@@ -2522,7 +2151,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01664">1664</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02188">2188</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="diammsg_8h_source.html#l00264">diam_avpgrp_reset_avp()</a>.</p>
 
@@ -2560,11 +2189,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01771">1771</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02295">2295</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00066">AVP_SESSIONID</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00438">diam_get_uint32_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
-<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l01635">dm_decode_get_cfg_session_info()</a>, and <a class="el" href="dmconfig_8h_source.html#l01616">dm_decode_start_session()</a>.</p>
+<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l02159">dm_decode_get_cfg_session_info()</a>, and <a class="el" href="dmconfig_8h_source.html#l02140">dm_decode_start_session()</a>.</p>
 
 </div>
 </div>
@@ -2600,11 +2229,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01616">1616</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02140">2140</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
-<p>References <a class="el" href="dmconfig_8h_source.html#l01174">dm_context_set_sessionid()</a>, <a class="el" href="dmconfig_8h_source.html#l01771">dm_decode_sessionid()</a>, and <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>.</p>
+<p>References <a class="el" href="dmconfig_8h_source.html#l01223">dm_context_set_sessionid()</a>, <a class="el" href="dmconfig_8h_source.html#l02295">dm_decode_sessionid()</a>, and <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>.</p>
 
-<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l01231">dm_send_start_session()</a>, and <a class="el" href="luawrapper_8c_source.html#l00469">generic_Lua_callback()</a>.</p>
+<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l01349">dm_send_start_session()</a>, and <a class="el" href="luawrapper_8c_source.html#l00469">generic_Lua_callback()</a>.</p>
 
 </div>
 </div>
@@ -2640,11 +2269,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01670">1670</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02194">2194</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00046">AVP_STRING</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00056">RC_ERR_ALLOC</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
-<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l01656">dm_decode_cmd_dump()</a>, <a class="el" href="dmconfig_8h_source.html#l01994">dm_decode_enumval()</a>, <a class="el" href="dmconfig_8c_source.html#l00946">dm_generic_send_request_char_address_get_char()</a>, <a class="el" href="dmconfig_8c_source.html#l00918">dm_generic_send_request_path_get_char()</a>, and <a class="el" href="luawrapper_8c_source.html#l00469">generic_Lua_callback()</a>.</p>
+<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l02180">dm_decode_cmd_dump()</a>, <a class="el" href="dmconfig_8h_source.html#l02518">dm_decode_enumval()</a>, <a class="el" href="dmconfig_8c_source.html#l00946">dm_generic_send_request_char_address_get_char()</a>, <a class="el" href="dmconfig_8c_source.html#l00918">dm_generic_send_request_path_get_char()</a>, and <a class="el" href="luawrapper_8c_source.html#l00469">generic_Lua_callback()</a>.</p>
 
 </div>
 </div>
@@ -2680,11 +2309,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01897">1897</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02421">2421</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00050">AVP_TIMEVAL</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00460">diam_get_timeval_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
-<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l01635">dm_decode_get_cfg_session_info()</a>.</p>
+<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l02159">dm_decode_get_cfg_session_info()</a>.</p>
 
 </div>
 </div>
@@ -2726,11 +2355,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02000">2000</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02524">2524</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00042">AVP_TYPE_PATH</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00438">diam_get_uint32_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00056">RC_ERR_ALLOC</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
-<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l02036">dm_decode_parameter_changed()</a>.</p>
+<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l02560">dm_decode_parameter_changed()</a>.</p>
 
 </div>
 </div>
@@ -2766,11 +2395,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01686">1686</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02210">2210</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00095">AVP_UINT16</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00428">diam_get_uint16_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
-<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l01644">dm_decode_add_instance()</a>, <a class="el" href="dmconfig_8h_source.html#l01650">dm_decode_find_instance()</a>, and <a class="el" href="luawrapper_8c_source.html#l00469">generic_Lua_callback()</a>.</p>
+<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l02168">dm_decode_add_instance()</a>, <a class="el" href="dmconfig_8h_source.html#l02174">dm_decode_find_instance()</a>, and <a class="el" href="luawrapper_8c_source.html#l00469">generic_Lua_callback()</a>.</p>
 
 </div>
 </div>
@@ -2806,11 +2435,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01703">1703</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02227">2227</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00099">AVP_UINT32</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00438">diam_get_uint32_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
-<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l01635">dm_decode_get_cfg_session_info()</a>, and <a class="el" href="dmconfig_8h_source.html#l01629">dm_decode_get_session_info()</a>.</p>
+<p>Referenced by <a class="el" href="dmconfig_8h_source.html#l02159">dm_decode_get_cfg_session_info()</a>, and <a class="el" href="dmconfig_8h_source.html#l02153">dm_decode_get_session_info()</a>.</p>
 
 </div>
 </div>
@@ -2846,7 +2475,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01737">1737</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02261">2261</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00101">AVP_UINT64</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00448">diam_get_uint64_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
@@ -2896,7 +2525,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01977">1977</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02501">2501</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
 
@@ -2923,90 +2552,6 @@ Variables</h2></td></tr>
 <p>References <a class="el" href="dmconfig_8h_source.html#l00146">commContext::buffer</a>, <a class="el" href="dmconfig_8h_source.html#l00148">commContext::bytes</a>, <a class="el" href="dmconfig_8h_source.html#l00147">commContext::cAlloc</a>, <a class="el" href="dmconfig_8h_source.html#l00150">commContext::event</a>, <a class="el" href="dmconfig_8h_source.html#l00160">dmContext::readCtx</a>, <a class="el" href="dmconfig_8h_source.html#l00145">commContext::req</a>, <a class="el" href="dmconfig_8h_source.html#l00157">dmContext::requestlist_head</a>, and <a class="el" href="dmconfig_8h_source.html#l00159">dmContext::writeCtx</a>.</p>
 
 <p>Referenced by <a class="el" href="luawrapper_8c_source.html#l02138">dmcontext_events_gc()</a>, and <a class="el" href="luawrapper_8c_source.html#l02126">dmcontext_sequential_gc()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a10e894c77b2731b3b9e2168d643dcb00"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_grp_param_notify </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> **&#160;</td>
-          <td class="paramname"><em>grp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01128">1128</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00041">AVP_PATH</a>, <a class="el" href="diammsg_8h_source.html#l00277">diam_avpgrp_add_string()</a>, <a class="el" href="codes_8h_source.html#l00056">RC_ERR_ALLOC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="codes_8h_source.html#l00011">VP_TRAVELPING</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01161">Lua_build_param_notify_grp()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3b5fb99f2e2e0e2b5880cd0c9d3470ec"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_register_cancel </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_ud</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01575">1575</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00024">CMD_DB_CANCEL</a>, and <a class="el" href="dmconfig_8c_source.html#l00389">dm_generic_register_request()</a>.</p>
 
 </div>
 </div>
@@ -3054,7 +2599,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01606">1606</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02130">2130</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00038">CMD_DEV_CONF_RESTORE</a>, and <a class="el" href="dmconfig_8c_source.html#l00573">dm_generic_register_request_string()</a>.</p>
 
@@ -3104,911 +2649,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01598">1598</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l02122">2122</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00037">CMD_DEV_CONF_SAVE</a>, and <a class="el" href="dmconfig_8c_source.html#l00573">dm_generic_register_request_string()</a>.</p>
 
 <p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01859">LUA_SIG_REGISTER()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad0b1beb8bfd0d9c72a44e062d5adce7a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_register_cmd_dump </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_ud</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01590">1590</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00020">CMD_DB_DUMP</a>, and <a class="el" href="dmconfig_8c_source.html#l00610">dm_generic_register_request_path()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l02028">LUA_SIG_REGISTER()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae251e86528eb8bb574bd8d1d7e7a7119"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_register_commit </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_ud</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01567">1567</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00023">CMD_DB_COMMIT</a>, and <a class="el" href="dmconfig_8c_source.html#l00389">dm_generic_register_request()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a20f729f96450e3a1e2121d7a806c7d4c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_register_del_instance </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_ud</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01470">1470</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00022">CMD_DB_DELINSTANCE</a>, and <a class="el" href="dmconfig_8c_source.html#l00610">dm_generic_register_request_path()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01816">LUA_SIG_REGISTER()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3254114deca2fe7051c0fd75205e3ed9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_register_end_session </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_ud</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01543">1543</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00028">CMD_ENDSESSION</a>, and <a class="el" href="dmconfig_8c_source.html#l00389">dm_generic_register_request()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a29bf9736252215c659b7fc1710857fdc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_register_find_instance </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *&#160;</td>
-          <td class="paramname"><em>grp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_ud</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01478">1478</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00041">AVP_PATH</a>, <a class="el" href="codes_8h_source.html#l00026">CMD_DB_FINDINSTANCE</a>, <a class="el" href="diammsg_8h_source.html#l00277">diam_avpgrp_add_string()</a>, <a class="el" href="dmconfig_8c_source.html#l00389">dm_generic_register_request()</a>, <a class="el" href="codes_8h_source.html#l00056">RC_ERR_ALLOC</a>, and <a class="el" href="codes_8h_source.html#l00011">VP_TRAVELPING</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01962">LUA_SIG_REGISTER()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad1bfd6385814d5ed8f4ca6d82494c4ac"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_register_get_cfg_session_info </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_ud</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01462">1462</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00031">CMD_CFGSESSIONINFO</a>, and <a class="el" href="dmconfig_8c_source.html#l00389">dm_generic_register_request()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abf212a0fc24fcd550d33540a16d2ee35"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_register_get_passive_notifications </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_ud</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01534">1534</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00036">CMD_GET_PASSIVE_NOTIFICATIONS</a>, and <a class="el" href="dmconfig_8c_source.html#l00389">dm_generic_register_request()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a617537ce5dc4372b14e6028637d4b1b1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_register_get_session_info </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_ud</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01454">1454</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00030">CMD_SESSIONINFO</a>, and <a class="el" href="dmconfig_8c_source.html#l00389">dm_generic_register_request()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a963944a3c9b36d0b3547073edf21a2ce"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_register_packet_get </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *&#160;</td>
-          <td class="paramname"><em>grp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_ud</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01559">1559</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00017">CMD_DB_GET</a>, and <a class="el" href="dmconfig_8c_source.html#l00389">dm_generic_register_request()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01718">LUA_SIG_REGISTER()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a79f2a4522f0d25b84b563984ef3810f2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_register_packet_param_notify </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>isActiveNotify</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *&#160;</td>
-          <td class="paramname"><em>grp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_ud</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01524">1524</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00034">CMD_PARAM_NOTIFY</a>, and <a class="el" href="dmconfig_8c_source.html#l00486">dm_generic_register_request_bool_grp()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01220">LUA_SIG_REGISTER()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa3ff2715d6fcababe70b885237d5cf5c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_register_packet_set </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *&#160;</td>
-          <td class="paramname"><em>grp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_ud</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01551">1551</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00016">CMD_DB_SET</a>, and <a class="el" href="dmconfig_8c_source.html#l00389">dm_generic_register_request()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01600">LUA_SIG_REGISTER()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3488908cc2bb3e16efb29830f0695723"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_register_recursive_param_notify </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>isActiveNotify</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_ud</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01502">1502</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00041">AVP_PATH</a>, <a class="el" href="codes_8h_source.html#l00035">CMD_RECURSIVE_PARAM_NOTIFY</a>, <a class="el" href="diammsg_8h_source.html#l00277">diam_avpgrp_add_string()</a>, <a class="el" href="dmconfig_8c_source.html#l00486">dm_generic_register_request_bool_grp()</a>, <a class="el" href="dmconfig_8h_source.html#l00554">dm_grp_free()</a>, <a class="el" href="dmconfig_8h_source.html#l00542">dm_grp_new()</a>, <a class="el" href="codes_8h_source.html#l00056">RC_ERR_ALLOC</a>, and <a class="el" href="codes_8h_source.html#l00011">VP_TRAVELPING</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01265">LUA_SIG_REGISTER()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a980d203e58be413f0bb34edea1575d12"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_register_retrieve_enums </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_ud</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01486">1486</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00019">CMD_DB_RETRIEVE_ENUMS</a>, and <a class="el" href="dmconfig_8c_source.html#l00610">dm_generic_register_request_path()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01129">LUA_SIG_REGISTER()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8fb02735fda0e2de04bf220f4db003ee"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_register_save </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_ud</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01583">1583</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00025">CMD_DB_SAVE</a>, and <a class="el" href="dmconfig_8c_source.html#l00389">dm_generic_register_request()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab3a80d3daec7aa9847e7b036ef5fc3e1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_register_start_session </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct timeval *&#160;</td>
-          <td class="paramname"><em>timeout_session</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct timeval *&#160;</td>
-          <td class="paramname"><em>timeout_request</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_ud</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01426">1426</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00027">CMD_STARTSESSION</a>, and <a class="el" href="dmconfig_8c_source.html#l00528">dm_generic_register_request_uint32_timeouts()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l00854">LUA_SIG_REGISTER()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2f17ea1a09867f143fc52e5a24c68f61"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_register_switch_session </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct timeval *&#160;</td>
-          <td class="paramname"><em>timeout_session</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct timeval *&#160;</td>
-          <td class="paramname"><em>timeout_request</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_ud</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01441">1441</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00029">CMD_SWITCHSESSION</a>, and <a class="el" href="dmconfig_8c_source.html#l00528">dm_generic_register_request_uint32_timeouts()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l00936">LUA_SIG_REGISTER()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a17d1ff6ba277b3eb4a1e38fc72b945fb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_register_unsubscribe_notify </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a1592f554af2652c344987bbeb5de4c60">DMCONFIG_CALLBACK</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_ud</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01494">1494</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00033">CMD_UNSUBSCRIBE_NOTIFY</a>, and <a class="el" href="dmconfig_8c_source.html#l00389">dm_generic_register_request()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01360">LUA_SIG_REGISTER()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac12eb39bfafb4a1d1439b4372bab2fec"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_cancel </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01395">1395</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00024">CMD_DB_CANCEL</a>, and <a class="el" href="dmconfig_8c_source.html#l00734">dm_generic_send_request()</a>.</p>
 
 </div>
 </div>
@@ -4044,7 +2689,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01420">1420</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01726">1726</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00038">CMD_DEV_CONF_RESTORE</a>, and <a class="el" href="dmconfig_8c_source.html#l00852">dm_generic_send_request_string()</a>.</p>
 
@@ -4084,779 +2729,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01414">1414</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
+<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01720">1720</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
 
 <p>References <a class="el" href="codes_8h_source.html#l00037">CMD_DEV_CONF_SAVE</a>, and <a class="el" href="dmconfig_8c_source.html#l00852">dm_generic_send_request_string()</a>.</p>
 
 <p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01842">LUA_SIG()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="adbb38a2a721013470042262dbc47ac7c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_cmd_dump </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01407">1407</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00020">CMD_DB_DUMP</a>, and <a class="el" href="dmconfig_8c_source.html#l00918">dm_generic_send_request_path_get_char()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l02002">LUA_SIG()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af2bd88e8184f357997dcfdadddb2088d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_commit </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01389">1389</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00023">CMD_DB_COMMIT</a>, and <a class="el" href="dmconfig_8c_source.html#l00734">dm_generic_send_request()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2246b6c5516f67d621f30908d5880d05"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_del_instance </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>path</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01293">1293</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00022">CMD_DB_DELINSTANCE</a>, and <a class="el" href="dmconfig_8c_source.html#l00882">dm_generic_send_request_path_get_grp()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01799">LUA_SIG()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad18e75b7d1adfe958234c778e1250d11"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_end_session </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01365">1365</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00028">CMD_ENDSESSION</a>, <a class="el" href="dmconfig_8h_source.html#l01174">dm_context_set_sessionid()</a>, <a class="el" href="dmconfig_8c_source.html#l00734">dm_generic_send_request()</a>, and <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l00985">LUA_SIG()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad0cb40436c28fec8be1b1a1248e5d054"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_find_instance </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *&#160;</td>
-          <td class="paramname"><em>grp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t *&#160;</td>
-          <td class="paramname"><em>inst</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01300">1300</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00041">AVP_PATH</a>, <a class="el" href="codes_8h_source.html#l00026">CMD_DB_FINDINSTANCE</a>, <a class="el" href="diammsg_8h_source.html#l00277">diam_avpgrp_add_string()</a>, <a class="el" href="dmconfig_8h_source.html#l01650">dm_decode_find_instance()</a>, <a class="el" href="dmconfig_8c_source.html#l00734">dm_generic_send_request()</a>, <a class="el" href="codes_8h_source.html#l00056">RC_ERR_ALLOC</a>, and <a class="el" href="codes_8h_source.html#l00011">VP_TRAVELPING</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01928">LUA_SIG()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2abf8eb9b8080a539942f2c66497552f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_get_cfg_session_info </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>sessionid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct timeval *&#160;</td>
-          <td class="paramname"><em>timeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01279">1279</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00031">CMD_CFGSESSIONINFO</a>, <a class="el" href="dmconfig_8h_source.html#l01635">dm_decode_get_cfg_session_info()</a>, <a class="el" href="dmconfig_8c_source.html#l00734">dm_generic_send_request()</a>, and <a class="el" href="dmconfig_8h_source.html#l00554">dm_grp_free()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01022">LUA_SIG()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="affe4f0a3d27e0aab86445f5a8fdca58d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_get_passive_notifications </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> **&#160;</td>
-          <td class="paramname"><em>answer</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01352">1352</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00036">CMD_GET_PASSIVE_NOTIFICATIONS</a>, and <a class="el" href="dmconfig_8c_source.html#l00734">dm_generic_send_request()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01295">LUA_SIG()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aeeadacca962ffd33284498b630e3d2c1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_get_session_info </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01265">1265</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00030">CMD_SESSIONINFO</a>, <a class="el" href="dmconfig_8h_source.html#l01629">dm_decode_get_session_info()</a>, <a class="el" href="dmconfig_8c_source.html#l00734">dm_generic_send_request()</a>, and <a class="el" href="dmconfig_8h_source.html#l00554">dm_grp_free()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2956aab23156aa19b3a3e550852a5a52"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_packet_get </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *&#160;</td>
-          <td class="paramname"><em>grp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> **&#160;</td>
-          <td class="paramname"><em>answer</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01383">1383</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00017">CMD_DB_GET</a>, and <a class="el" href="dmconfig_8c_source.html#l00734">dm_generic_send_request()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01692">LUA_SIG()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a10d11a06651f951645983005292be512"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_packet_param_notify </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t isActiveNotify &#160;</td>
-          <td class="paramname"><em>__attribute__</em>(unused), </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *&#160;</td>
-          <td class="paramname"><em>grp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01344">1344</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00034">CMD_PARAM_NOTIFY</a>, and <a class="el" href="dmconfig_8c_source.html#l00773">dm_generic_send_request_bool_grp()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01197">LUA_SIG()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1f9c73a51b3c82fe43fc94e81ece2425"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_packet_set </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *&#160;</td>
-          <td class="paramname"><em>grp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01377">1377</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00016">CMD_DB_SET</a>, and <a class="el" href="dmconfig_8c_source.html#l00734">dm_generic_send_request()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01583">LUA_SIG()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6179a686d2f19c399c0f0b051ef0295c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_recursive_param_notify </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t isActiveNotify &#160;</td>
-          <td class="paramname"><em>__attribute__</em>(unused), </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>path</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01324">1324</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00041">AVP_PATH</a>, <a class="el" href="codes_8h_source.html#l00035">CMD_RECURSIVE_PARAM_NOTIFY</a>, <a class="el" href="diammsg_8h_source.html#l00277">diam_avpgrp_add_string()</a>, <a class="el" href="dmconfig_8c_source.html#l00773">dm_generic_send_request_bool_grp()</a>, <a class="el" href="dmconfig_8h_source.html#l00554">dm_grp_free()</a>, <a class="el" href="dmconfig_8h_source.html#l00542">dm_grp_new()</a>, <a class="el" href="codes_8h_source.html#l00056">RC_ERR_ALLOC</a>, and <a class="el" href="codes_8h_source.html#l00011">VP_TRAVELPING</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01247">LUA_SIG()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a870f4d976c365a2766abd0442c8a6199"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_retrieve_enums </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> **&#160;</td>
-          <td class="paramname"><em>answer</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01311">1311</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00019">CMD_DB_RETRIEVE_ENUMS</a>, and <a class="el" href="dmconfig_8c_source.html#l00882">dm_generic_send_request_path_get_grp()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01102">LUA_SIG()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a482dc24e9aa7e4ec613560d4843f04f7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_save </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01401">1401</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00025">CMD_DB_SAVE</a>, and <a class="el" href="dmconfig_8c_source.html#l00734">dm_generic_send_request()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abe7c2988abcd8f617140cb8ca405fc7d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_start_session </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct timeval *&#160;</td>
-          <td class="paramname"><em>timeout_session</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct timeval *&#160;</td>
-          <td class="paramname"><em>timeout_request</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01231">1231</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00027">CMD_STARTSESSION</a>, <a class="el" href="dmconfig_8h_source.html#l01616">dm_decode_start_session()</a>, <a class="el" href="dmconfig_8c_source.html#l00807">dm_generic_send_request_uint32_timeouts_get_grp()</a>, and <a class="el" href="dmconfig_8h_source.html#l00554">dm_grp_free()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l00820">LUA_SIG()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4d938aee3c61196d8495b09122bec109"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_subscribe_notify </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01318">1318</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00032">CMD_SUBSCRIBE_NOTIFY</a>, and <a class="el" href="dmconfig_8c_source.html#l00734">dm_generic_send_request()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="adc9f2d383e788ae6bf76f4bbb2028e03"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_switch_session </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct timeval *&#160;</td>
-          <td class="paramname"><em>timeout_session</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct timeval *&#160;</td>
-          <td class="paramname"><em>timeout_request</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01252">1252</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00029">CMD_SWITCHSESSION</a>, and <a class="el" href="dmconfig_8c_source.html#l00807">dm_generic_send_request_uint32_timeouts_get_grp()</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l00903">LUA_SIG()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a914c2113ce409dc3560b20cc1cd3fa14"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t dm_send_unsubscribe_notify </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01359">1359</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="codes_8h_source.html#l00033">CMD_UNSUBSCRIBE_NOTIFY</a>, and <a class="el" href="dmconfig_8c_source.html#l00734">dm_generic_send_request()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab2fe86eb90a928f0c0c0481ee3a4b45f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void dm_shutdown_socket </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *&#160;</td>
-          <td class="paramname"><em>dmCtx</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dmconfig_8h_source.html#l01222">1222</a> of file <a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>.</p>
-
-<p>References <a class="el" href="dmconfig_8h_source.html#l00154">dmContext::socket</a>.</p>
-
-<p>Referenced by <a class="el" href="luawrapper_8c_source.html#l02138">dmcontext_events_gc()</a>, <a class="el" href="luawrapper_8c_source.html#l02126">dmcontext_sequential_gc()</a>, and <a class="el" href="luawrapper_8c_source.html#l00733">Lua_generic_shutdown()</a>.</p>
 
 </div>
 </div>
@@ -4981,7 +2858,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_416a6a781e1de958de39213487b69f7e.html">libdmconfig</a></li><li class="navelem"><a class="el" href="dmconfig_8h.html">dmconfig.h</a></li>
-    <li class="footer">Generated on Wed Feb 26 2014 18:35:37 for mand-1.0 by
+    <li class="footer">Generated on Thu Feb 27 2014 11:36:15 for mand-1.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

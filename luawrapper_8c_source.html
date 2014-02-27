@@ -557,7 +557,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;                L_ERROR(L_ALLOC);</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="codes_8h.html#a8bae2e78736b81e572ef09e1fc9ba859">CMD_ENDSESSION</a>:</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            <a class="code" href="dmconfig_8h.html#a73ba6473cdd59fcd43eeac6571fb4976">dm_context_set_sessionid</a>(dmCtx, 0);</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            <a class="code" href="group__API.html#ga73ba6473cdd59fcd43eeac6571fb4976" title="set the session id in a socket context ">dm_context_set_sessionid</a>(dmCtx, 0);</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="codes_8h.html#a5251d4c39bbe464abe3583471332234a">CMD_SESSIONINFO</a>:</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="luawrapper_8c.html#a45359914708a6e95f6b19cb92251cef6">Lua_decode_get_session_info</a>(L, answer_grp))</div>
@@ -686,7 +686,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    luaL_getmetatable(L, udata);</div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    lua_setmetatable(L, -2);</div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    <a class="code" href="dmconfig_8h.html#a6192b39c21943aaea598a59aff24e385">dm_context_init</a>(*dmCtx, le_ud-&gt;base);</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    <a class="code" href="group__API.html#ga6192b39c21943aaea598a59aff24e385" title="initialize a new socket context ">dm_context_init</a>(*dmCtx, le_ud-&gt;base);</div>
 <div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;}</div>
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;</div>
 <div class="line"><a name="l00623"></a><span class="lineno"><a class="code" href="luawrapper_8c.html#a88e960dd9419a1822242688fa8f4a5bf">  623</a></span>&#160;<a class="code" href="luawrapper_8c.html#a84f92fbb4ba5c19f5e98651e941c5a1b">LUA_SIG</a>(init_sequential)</div>
@@ -713,7 +713,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;</div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    <a class="code" href="luawrapper_8c.html#a96c9fea92085ee1584c6b0e9273e649e">Lua_init_eval</a>(L, <a class="code" href="luawrapper_8c.html#aac8b65a9694fcebec24caeda11d62352">DMCONFIG_SESSION_EVENTS_MT</a>, &amp;dmCtx, &amp;type);</div>
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    lua_pushinteger(L, rc = <a class="code" href="dmconfig_8h.html#a45b31b03f78167ddc748cc7fd3430add">dm_create_socket</a>(dmCtx, type));</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    lua_pushinteger(L, rc = <a class="code" href="group__API.html#ga45b31b03f78167ddc748cc7fd3430add" title="create a socket in a socket context ">dm_create_socket</a>(dmCtx, type));</div>
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    <span class="keywordflow">if</span> (rc)</div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    lua_insert(L, -2);</div>
@@ -808,8 +808,8 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    luaL_argcheck(L, top == 1, top, L_NUMBER);</div>
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;</div>
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    ctx = luaL_checkudata(L, 1, udata);</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    <a class="code" href="dmconfig_8h.html#ab2fe86eb90a928f0c0c0481ee3a4b45f">dm_shutdown_socket</a>(ctx);</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;    <a class="code" href="dmconfig_8h.html#ad65033eba4fceae6c08ce032454eba12">dm_context_set_socket</a>(ctx, -1);</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    <a class="code" href="group__API.html#gab2fe86eb90a928f0c0c0481ee3a4b45f" title="shut down the socket in a socket context ">dm_shutdown_socket</a>(ctx);</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;    <a class="code" href="group__API.html#gad65033eba4fceae6c08ce032454eba12" title="set the socket in a socket context ">dm_context_set_socket</a>(ctx, -1);</div>
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;</div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;    lua_pushinteger(L, <a class="code" href="codes_8h.html#a1a7c965dc30cd58142d9a5843b614c3aab834a5bb2ce6d97c2831fe3d71103c14">RC_OK</a>);</div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    <span class="keywordflow">return</span> 1;</div>
@@ -841,7 +841,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;    <span class="keywordflow">if</span> (*endl)</div>
 <div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        <span class="keywordflow">return</span> luaL_argerror(L, 2, L_VALUE);</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    <a class="code" href="dmconfig_8h.html#a73ba6473cdd59fcd43eeac6571fb4976">dm_context_set_sessionid</a>(ctx, sessionid);</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    <a class="code" href="group__API.html#ga73ba6473cdd59fcd43eeac6571fb4976" title="set the session id in a socket context ">dm_context_set_sessionid</a>(ctx, sessionid);</div>
 <div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;    lua_pushinteger(L, <a class="code" href="codes_8h.html#a1a7c965dc30cd58142d9a5843b614c3aab834a5bb2ce6d97c2831fe3d71103c14">RC_OK</a>);</div>
 <div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;    <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;}</div>
@@ -869,7 +869,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;    ctx = luaL_checkudata(L, 1, udata);</div>
 <div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;</div>
 <div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;    lua_pushinteger(L, <a class="code" href="codes_8h.html#a1a7c965dc30cd58142d9a5843b614c3aab834a5bb2ce6d97c2831fe3d71103c14">RC_OK</a>);</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;    snprintf(buf, <span class="keyword">sizeof</span>(buf), <span class="stringliteral">&quot;%u&quot;</span>, <a class="code" href="dmconfig_8h.html#a436bf414d9c54f0e1322fc35720cd03b">dm_context_get_sessionid</a>(ctx));</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;    snprintf(buf, <span class="keyword">sizeof</span>(buf), <span class="stringliteral">&quot;%u&quot;</span>, <a class="code" href="group__API.html#ga436bf414d9c54f0e1322fc35720cd03b" title="get the session id from a socket context ">dm_context_get_sessionid</a>(ctx));</div>
 <div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;                <span class="comment">/* truncation shouldn&#39;t be possible */</span></div>
 <div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;    lua_pushstring(L, buf);</div>
 <div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;</div>
@@ -914,7 +914,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;</div>
 <div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;                <span class="comment">/* FIXME: flags at the end of the argument list is</span></div>
 <div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;<span class="comment">                   only for backwards compatibility */</span></div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;    lua_pushinteger(L, <a class="code" href="dmconfig_8h.html#abe7c2988abcd8f617140cb8ca405fc7d">dm_send_start_session</a>(ctx, luaL_optint(L, 4, <a class="code" href="dmconfig_8h.html#afd8657ce8c7883094b76a82c9d1af88a">CMD_FLAG_READWRITE</a>),</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;    lua_pushinteger(L, <a class="code" href="group__API.html#gabe7c2988abcd8f617140cb8ca405fc7d" title="Synchonous start session request. ">dm_send_start_session</a>(ctx, luaL_optint(L, 4, <a class="code" href="dmconfig_8h.html#afd8657ce8c7883094b76a82c9d1af88a">CMD_FLAG_READWRITE</a>),</div>
 <div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;                         p_session, p_request));</div>
 <div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;</div>
 <div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;    <span class="keywordflow">return</span> 1;</div>
@@ -959,7 +959,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;    } <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;        flags = <a class="code" href="dmconfig_8h.html#afd8657ce8c7883094b76a82c9d1af88a">CMD_FLAG_READWRITE</a>;</div>
 <div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    rc = <a class="code" href="dmconfig_8h.html#ab3a80d3daec7aa9847e7b036ef5fc3e1">dm_register_start_session</a>(ctx, flags, p_session, p_request,</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    rc = <a class="code" href="group__API.html#gab3a80d3daec7aa9847e7b036ef5fc3e1" title="Asynchonous start session request. ">dm_register_start_session</a>(ctx, flags, p_session, p_request,</div>
 <div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;                       cb ? <a class="code" href="luawrapper_8c.html#a4c162cf02cabac75527f9231b91d8025">generic_Lua_callback</a> : NULL, cb);</div>
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;    lua_pushinteger(L, rc);</div>
 <div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;    <span class="keywordflow">if</span> (rc)</div>
@@ -996,7 +996,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;        p_request = NULL;</div>
 <div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;</div>
 <div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;                <span class="comment">/* FIXME: s.a. */</span></div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;    lua_pushinteger(L, <a class="code" href="dmconfig_8h.html#adc9f2d383e788ae6bf76f4bbb2028e03">dm_send_switch_session</a>(ctx, luaL_optint(L, 4, <a class="code" href="dmconfig_8h.html#afd8657ce8c7883094b76a82c9d1af88a">CMD_FLAG_READWRITE</a>),</div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;    lua_pushinteger(L, <a class="code" href="group__API.html#gadc9f2d383e788ae6bf76f4bbb2028e03" title="Synchonous switch session request. ">dm_send_switch_session</a>(ctx, luaL_optint(L, 4, <a class="code" href="dmconfig_8h.html#afd8657ce8c7883094b76a82c9d1af88a">CMD_FLAG_READWRITE</a>),</div>
 <div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;                          p_session, p_request));</div>
 <div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;</div>
 <div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;    <span class="keywordflow">return</span> 1;</div>
@@ -1041,7 +1041,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;    } <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;        flags = <a class="code" href="dmconfig_8h.html#afd8657ce8c7883094b76a82c9d1af88a">CMD_FLAG_READWRITE</a>;</div>
 <div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;</div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;    rc = <a class="code" href="dmconfig_8h.html#a2f17ea1a09867f143fc52e5a24c68f61">dm_register_switch_session</a>(ctx, flags, p_session, p_request,</div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;    rc = <a class="code" href="group__API.html#ga2f17ea1a09867f143fc52e5a24c68f61" title="Asynchonous switch session request. ">dm_register_switch_session</a>(ctx, flags, p_session, p_request,</div>
 <div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;                    cb ? <a class="code" href="luawrapper_8c.html#a4c162cf02cabac75527f9231b91d8025">generic_Lua_callback</a> : NULL, cb);</div>
 <div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;    lua_pushinteger(L, rc);</div>
 <div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;    <span class="keywordflow">if</span> (rc)</div>
@@ -1060,7 +1060,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;    luaL_argcheck(L, top == 1, top, L_NUMBER);</div>
 <div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;    ctx = luaL_checkudata(L, 1, <a class="code" href="luawrapper_8c.html#a1f21c68a64c1ea975e878faa758d42ba">DMCONFIG_SESSION_SEQUENTIAL_MT</a>);</div>
 <div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;</div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;    lua_pushinteger(L, <a class="code" href="dmconfig_8h.html#ad18e75b7d1adfe958234c778e1250d11">dm_send_end_session</a>(ctx));</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;    lua_pushinteger(L, <a class="code" href="group__API.html#gad18e75b7d1adfe958234c778e1250d11" title="Synchonous send session end request. ">dm_send_end_session</a>(ctx));</div>
 <div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;    <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;}</div>
 <div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;</div>
@@ -1102,7 +1102,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;    luaL_argcheck(L, top == 1, top, L_NUMBER);</div>
 <div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;    ctx = luaL_checkudata(L, 1, <a class="code" href="luawrapper_8c.html#a1f21c68a64c1ea975e878faa758d42ba">DMCONFIG_SESSION_SEQUENTIAL_MT</a>);</div>
 <div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;</div>
-<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;    rc = <a class="code" href="dmconfig_8h.html#a2abf8eb9b8080a539942f2c66497552f">dm_send_get_cfg_session_info</a>(ctx, &amp;sessionid, &amp;flags, &amp;timeout);</div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;    rc = <a class="code" href="group__API.html#ga437d2b43e02f8379bf03c41e4a989ef1" title="Synchonous get config session info request. ">dm_send_get_cfg_session_info</a>(ctx, &amp;sessionid, &amp;flags, &amp;timeout);</div>
 <div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;    lua_pushinteger(L, rc);</div>
 <div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;    <span class="keywordflow">if</span> (rc)</div>
 <div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;        <span class="keywordflow">return</span> 1;</div>
@@ -1183,7 +1183,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;    ctx = luaL_checkudata(L, 1, <a class="code" href="luawrapper_8c.html#a1f21c68a64c1ea975e878faa758d42ba">DMCONFIG_SESSION_SEQUENTIAL_MT</a>);</div>
 <div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;    path = luaL_checkstring(L, 2);</div>
 <div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;</div>
-<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;    <span class="keywordflow">if</span> (!(rc = <a class="code" href="dmconfig_8h.html#a870f4d976c365a2766abd0442c8a6199">dm_send_retrieve_enums</a>(ctx, path, &amp;answer))) {</div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;    <span class="keywordflow">if</span> (!(rc = <a class="code" href="group__API.html#ga870f4d976c365a2766abd0442c8a6199" title="Synchonous retrieve enums request. ">dm_send_retrieve_enums</a>(ctx, path, &amp;answer))) {</div>
 <div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;        rc = <a class="code" href="luawrapper_8c.html#a96a9e47d544c1173ede6a7bdf718d59d">Lua_decode_retrieve_enums</a>(L, answer);</div>
 <div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;        <a class="code" href="group__API.html#gac5815cc998628d97a8c0e20ce888dfb6" title="free AVP group ">dm_grp_free</a>(answer);</div>
 <div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;    }</div>
@@ -1211,7 +1211,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;    path = luaL_checkstring(L, 2);</div>
 <div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;    lua_insert(L, 1);</div>
 <div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;</div>
-<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;    rc = <a class="code" href="dmconfig_8h.html#a980d203e58be413f0bb34edea1575d12">dm_register_retrieve_enums</a>(ctx, path,</div>
+<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;    rc = <a class="code" href="group__API.html#ga980d203e58be413f0bb34edea1575d12" title="Asynchonous retrieve enums request. ">dm_register_retrieve_enums</a>(ctx, path,</div>
 <div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;                    cb ? <a class="code" href="luawrapper_8c.html#a4c162cf02cabac75527f9231b91d8025">generic_Lua_callback</a> : NULL, cb);</div>
 <div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;    lua_pushinteger(L, rc);</div>
 <div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;    <span class="keywordflow">if</span> (rc)</div>
@@ -1249,7 +1249,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;        <span class="keywordflow">if</span> (!lua_isstring(L, -1))</div>
 <div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;            <a class="code" href="luawrapper_8c.html#a89592535d5d3075649176ecf441506b4">PTABLE_ERR</a>();</div>
 <div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;</div>
-<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="dmconfig_8h.html#a10e894c77b2731b3b9e2168d643dcb00">dm_grp_param_notify</a>(&amp;grp, lua_tostring(L, -1)))</div>
+<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group__API.html#ga10e894c77b2731b3b9e2168d643dcb00" title="build AVP group for param notify packets ">dm_grp_param_notify</a>(&amp;grp, lua_tostring(L, -1)))</div>
 <div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;            L_ERROR(L_ALLOC)</div>
 <div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;</div>
 <div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;        lua_pop(L, 1);          <span class="comment">/* removes the path string */</span></div>
@@ -1280,7 +1280,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;        <span class="keywordflow">return</span> luaL_argerror(L, 2, L_TYPE);</div>
 <div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;    }</div>
 <div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;</div>
-<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;    lua_pushinteger(L, <a class="code" href="dmconfig_8h.html#a10d11a06651f951645983005292be512">dm_send_packet_param_notify</a>(ctx, 0, grp));</div>
+<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;    lua_pushinteger(L, <a class="code" href="group__API.html#gacc58eec244894c3465c46620f4298089" title="Synchonous set notification on a parameter. ">dm_send_packet_param_notify</a>(ctx, 0, grp));</div>
 <div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;    <a class="code" href="group__API.html#gac5815cc998628d97a8c0e20ce888dfb6" title="free AVP group ">dm_grp_free</a>(grp);</div>
 <div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;</div>
 <div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;    <span class="keywordflow">return</span> 1;</div>
@@ -1302,7 +1302,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;    luaL_argcheck(L, lua_gettop(L) == 3, top, L_NUMBER);</div>
 <div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;</div>
 <div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;    grp = <a class="code" href="luawrapper_8c.html#adc2280269fec1545f29906a06a2fd905">Lua_build_param_notify_grp</a>(L, &amp;isActiveNotify);</div>
-<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;    rc = <a class="code" href="dmconfig_8h.html#a79f2a4522f0d25b84b563984ef3810f2">dm_register_packet_param_notify</a>(ctx, isActiveNotify, grp,</div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;    rc = <a class="code" href="group__API.html#ga79f2a4522f0d25b84b563984ef3810f2" title="Asynchonous set notification on a parameter. ">dm_register_packet_param_notify</a>(ctx, isActiveNotify, grp,</div>
 <div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;                         cb ? <a class="code" href="luawrapper_8c.html#a4c162cf02cabac75527f9231b91d8025">generic_Lua_callback</a> : NULL, cb);</div>
 <div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;    lua_pushinteger(L, rc);</div>
 <div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;    <a class="code" href="group__API.html#gac5815cc998628d97a8c0e20ce888dfb6" title="free AVP group ">dm_grp_free</a>(grp);</div>
@@ -1326,7 +1326,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;    luaL_argcheck(L, lua_isboolean(L, 2) &amp;&amp; !lua_toboolean(L, 2), 2, L_TYPE); <span class="comment">/* FIXME: this is only for backwards compatibility */</span></div>
 <div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;    path = luaL_checkstring(L, 3);</div>
 <div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;</div>
-<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;    lua_pushinteger(L, <a class="code" href="dmconfig_8h.html#a6179a686d2f19c399c0f0b051ef0295c">dm_send_recursive_param_notify</a>(ctx, 0, path));</div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;    lua_pushinteger(L, <a class="code" href="group__API.html#ga52fc5a97140df12648c2dc71116e4ebf" title="Synchonous set notification on parameters and all child parameters. ">dm_send_recursive_param_notify</a>(ctx, 0, path));</div>
 <div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;</div>
 <div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;    <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;}</div>
@@ -1351,7 +1351,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;    lua_insert(L, 1);</div>
 <div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;    lua_insert(L, 1);</div>
 <div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;</div>
-<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;    rc = <a class="code" href="dmconfig_8h.html#a3488908cc2bb3e16efb29830f0695723">dm_register_recursive_param_notify</a>(ctx, isActiveNotify, path,</div>
+<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;    rc = <a class="code" href="group__API.html#ga3488908cc2bb3e16efb29830f0695723" title="Asynchonous set notification on parameters and all child parameters. ">dm_register_recursive_param_notify</a>(ctx, isActiveNotify, path,</div>
 <div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;                        cb ? <a class="code" href="luawrapper_8c.html#a4c162cf02cabac75527f9231b91d8025">generic_Lua_callback</a> : NULL, cb);</div>
 <div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;    lua_pushinteger(L, rc);</div>
 <div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;    <span class="keywordflow">if</span> (rc)</div>
@@ -1372,7 +1372,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;    luaL_argcheck(L, top == 1, top, L_NUMBER);</div>
 <div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;    ctx = luaL_checkudata(L, 1, <a class="code" href="luawrapper_8c.html#a1f21c68a64c1ea975e878faa758d42ba">DMCONFIG_SESSION_SEQUENTIAL_MT</a>);</div>
 <div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;</div>
-<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;    <span class="keywordflow">if</span> (!(rc = <a class="code" href="dmconfig_8h.html#affe4f0a3d27e0aab86445f5a8fdca58d">dm_send_get_passive_notifications</a>(ctx, &amp;answer))) {</div>
+<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;    <span class="keywordflow">if</span> (!(rc = <a class="code" href="group__API.html#gaffe4f0a3d27e0aab86445f5a8fdca58d" title="Synchonous retrieve all pending passive notifications. ">dm_send_get_passive_notifications</a>(ctx, &amp;answer))) {</div>
 <div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;        rc = <a class="code" href="luawrapper_8c.html#a78ca53c3ddbdb6a94de48c9588d7aa37">Lua_decode_notifications</a>(L, answer);</div>
 <div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;        <a class="code" href="group__API.html#gac5815cc998628d97a8c0e20ce888dfb6" title="free AVP group ">dm_grp_free</a>(answer);</div>
 <div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;    }</div>
@@ -1445,7 +1445,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;    }</div>
 <div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;</div>
-<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;    rc = <a class="code" href="dmconfig_8h.html#a17d1ff6ba277b3eb4a1e38fc72b945fb">dm_register_unsubscribe_notify</a>(ctx, cb ? <a class="code" href="luawrapper_8c.html#a4c162cf02cabac75527f9231b91d8025">generic_Lua_callback</a> : NULL, cb);</div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;    rc = <a class="code" href="group__API.html#ga17d1ff6ba277b3eb4a1e38fc72b945fb" title="Asynchonous unsubscribe from all notifications request. ">dm_register_unsubscribe_notify</a>(ctx, cb ? <a class="code" href="luawrapper_8c.html#a4c162cf02cabac75527f9231b91d8025">generic_Lua_callback</a> : NULL, cb);</div>
 <div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;    lua_pushinteger(L, rc);</div>
 <div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;    <span class="keywordflow">if</span> (rc)</div>
 <div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;        <span class="keywordflow">return</span> 1;</div>
@@ -1660,7 +1660,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l01591"></a><span class="lineno"> 1591</span>&#160;    ctx = luaL_checkudata(L, 1, <a class="code" href="luawrapper_8c.html#a1f21c68a64c1ea975e878faa758d42ba">DMCONFIG_SESSION_SEQUENTIAL_MT</a>);</div>
 <div class="line"><a name="l01592"></a><span class="lineno"> 1592</span>&#160;</div>
 <div class="line"><a name="l01593"></a><span class="lineno"> 1593</span>&#160;    grp = <a class="code" href="luawrapper_8c.html#a6f0c7b163544a6e94368616e581c15b4">Lua_build_set_grp</a>(L);</div>
-<div class="line"><a name="l01594"></a><span class="lineno"> 1594</span>&#160;    lua_pushinteger(L, <a class="code" href="dmconfig_8h.html#a1f9c73a51b3c82fe43fc94e81ece2425">dm_send_packet_set</a>(ctx, grp));</div>
+<div class="line"><a name="l01594"></a><span class="lineno"> 1594</span>&#160;    lua_pushinteger(L, <a class="code" href="group__API.html#ga1f9c73a51b3c82fe43fc94e81ece2425" title="Synchonous send set end request. ">dm_send_packet_set</a>(ctx, grp));</div>
 <div class="line"><a name="l01595"></a><span class="lineno"> 1595</span>&#160;    <a class="code" href="group__API.html#gac5815cc998628d97a8c0e20ce888dfb6" title="free AVP group ">dm_grp_free</a>(grp);</div>
 <div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160;</div>
 <div class="line"><a name="l01597"></a><span class="lineno"> 1597</span>&#160;    <span class="keywordflow">return</span> 1;</div>
@@ -1681,7 +1681,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;    luaL_argcheck(L, lua_gettop(L) == 2, top, L_NUMBER);</div>
 <div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;</div>
 <div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;    grp = <a class="code" href="luawrapper_8c.html#a6f0c7b163544a6e94368616e581c15b4">Lua_build_set_grp</a>(L);</div>
-<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;    rc = <a class="code" href="dmconfig_8h.html#aa3ff2715d6fcababe70b885237d5cf5c">dm_register_packet_set</a>(ctx, grp, cb ? <a class="code" href="luawrapper_8c.html#a4c162cf02cabac75527f9231b91d8025">generic_Lua_callback</a> : NULL, cb);</div>
+<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;    rc = <a class="code" href="group__API.html#gaa3ff2715d6fcababe70b885237d5cf5c" title="Asynchonous send set end request. ">dm_register_packet_set</a>(ctx, grp, cb ? <a class="code" href="luawrapper_8c.html#a4c162cf02cabac75527f9231b91d8025">generic_Lua_callback</a> : NULL, cb);</div>
 <div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;    lua_pushinteger(L, rc);</div>
 <div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;    <a class="code" href="group__API.html#gac5815cc998628d97a8c0e20ce888dfb6" title="free AVP group ">dm_grp_free</a>(grp);</div>
 <div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;    <span class="keywordflow">if</span> (rc)</div>
@@ -1773,7 +1773,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l01704"></a><span class="lineno"> 1704</span>&#160;    ctx = luaL_checkudata(L, 1, <a class="code" href="luawrapper_8c.html#a1f21c68a64c1ea975e878faa758d42ba">DMCONFIG_SESSION_SEQUENTIAL_MT</a>);</div>
 <div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;</div>
 <div class="line"><a name="l01706"></a><span class="lineno"> 1706</span>&#160;    grp = <a class="code" href="luawrapper_8c.html#a34ac5487d20a89093d1127e0743411b4">Lua_build_get_grp</a>(L);</div>
-<div class="line"><a name="l01707"></a><span class="lineno"> 1707</span>&#160;    <span class="keywordflow">if</span> (!(rc = <a class="code" href="dmconfig_8h.html#a2956aab23156aa19b3a3e550852a5a52">dm_send_packet_get</a>(ctx, grp, &amp;ret_grp)))</div>
+<div class="line"><a name="l01707"></a><span class="lineno"> 1707</span>&#160;    <span class="keywordflow">if</span> (!(rc = <a class="code" href="group__API.html#ga2956aab23156aa19b3a3e550852a5a52" title="Synchonous send get end request. ">dm_send_packet_get</a>(ctx, grp, &amp;ret_grp)))</div>
 <div class="line"><a name="l01708"></a><span class="lineno"> 1708</span>&#160;        rc = <a class="code" href="luawrapper_8c.html#af954563ce9fd559a17c7df60b06567a8">Lua_decode_get</a>(L, ret_grp);</div>
 <div class="line"><a name="l01709"></a><span class="lineno"> 1709</span>&#160;    <a class="code" href="group__API.html#gac5815cc998628d97a8c0e20ce888dfb6" title="free AVP group ">dm_grp_free</a>(grp);</div>
 <div class="line"><a name="l01710"></a><span class="lineno"> 1710</span>&#160;    lua_pushinteger(L, rc);</div>
@@ -1799,7 +1799,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;    luaL_argcheck(L, lua_gettop(L) == 2, top, L_NUMBER);</div>
 <div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;</div>
 <div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;    grp = <a class="code" href="luawrapper_8c.html#a34ac5487d20a89093d1127e0743411b4">Lua_build_get_grp</a>(L);</div>
-<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;    rc = <a class="code" href="dmconfig_8h.html#a963944a3c9b36d0b3547073edf21a2ce">dm_register_packet_get</a>(ctx, grp,</div>
+<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;    rc = <a class="code" href="group__API.html#ga963944a3c9b36d0b3547073edf21a2ce" title="Asynchonous send get end request. ">dm_register_packet_get</a>(ctx, grp,</div>
 <div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160;                    cb ? <a class="code" href="luawrapper_8c.html#a4c162cf02cabac75527f9231b91d8025">generic_Lua_callback</a> : NULL, cb);</div>
 <div class="line"><a name="l01735"></a><span class="lineno"> 1735</span>&#160;    lua_pushinteger(L, rc);</div>
 <div class="line"><a name="l01736"></a><span class="lineno"> 1736</span>&#160;    <a class="code" href="group__API.html#gac5815cc998628d97a8c0e20ce888dfb6" title="free AVP group ">dm_grp_free</a>(grp);</div>
@@ -1877,7 +1877,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l01808"></a><span class="lineno"> 1808</span>&#160;    ctx = luaL_checkudata(L, 1, <a class="code" href="luawrapper_8c.html#a1f21c68a64c1ea975e878faa758d42ba">DMCONFIG_SESSION_SEQUENTIAL_MT</a>);</div>
 <div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;    path = luaL_checkstring(L, 2);</div>
 <div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;</div>
-<div class="line"><a name="l01811"></a><span class="lineno"> 1811</span>&#160;    lua_pushinteger(L, <a class="code" href="dmconfig_8h.html#a2246b6c5516f67d621f30908d5880d05">dm_send_del_instance</a>(ctx, path));</div>
+<div class="line"><a name="l01811"></a><span class="lineno"> 1811</span>&#160;    lua_pushinteger(L, <a class="code" href="group__API.html#ga2246b6c5516f67d621f30908d5880d05" title="Synchonous delete instance request. ">dm_send_del_instance</a>(ctx, path));</div>
 <div class="line"><a name="l01812"></a><span class="lineno"> 1812</span>&#160;</div>
 <div class="line"><a name="l01813"></a><span class="lineno"> 1813</span>&#160;    <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l01814"></a><span class="lineno"> 1814</span>&#160;}</div>
@@ -1898,7 +1898,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;    path = luaL_checkstring(L, 2);</div>
 <div class="line"><a name="l01830"></a><span class="lineno"> 1830</span>&#160;    lua_insert(L, 1);</div>
 <div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;</div>
-<div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;    rc = <a class="code" href="dmconfig_8h.html#a20f729f96450e3a1e2121d7a806c7d4c">dm_register_del_instance</a>(ctx, path,</div>
+<div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;    rc = <a class="code" href="group__API.html#ga20f729f96450e3a1e2121d7a806c7d4c" title="Asynchonous delete instance request. ">dm_register_del_instance</a>(ctx, path,</div>
 <div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160;                      cb ? <a class="code" href="luawrapper_8c.html#a4c162cf02cabac75527f9231b91d8025">generic_Lua_callback</a> : NULL, cb);</div>
 <div class="line"><a name="l01834"></a><span class="lineno"> 1834</span>&#160;    lua_pushinteger(L, rc);</div>
 <div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;    <span class="keywordflow">if</span> (rc)</div>
@@ -2018,7 +2018,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;    }</div>
 <div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;    <a class="code" href="luawrapper_8c.html#a6d008da1c3f7b428f2f6a8db6067a69a">Lua_encode_value</a>(L, type, param, &amp;grp);</div>
 <div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;</div>
-<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;    lua_pushinteger(L, rc = <a class="code" href="dmconfig_8h.html#ad0cb40436c28fec8be1b1a1248e5d054">dm_send_find_instance</a>(ctx, path, grp, &amp;instance));</div>
+<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;    lua_pushinteger(L, rc = <a class="code" href="group__API.html#gad0cb40436c28fec8be1b1a1248e5d054" title="Synchonous find instance request. ">dm_send_find_instance</a>(ctx, path, grp, &amp;instance));</div>
 <div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;    <a class="code" href="group__API.html#gac5815cc998628d97a8c0e20ce888dfb6" title="free AVP group ">dm_grp_free</a>(grp);</div>
 <div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;    <span class="keywordflow">if</span> (rc)</div>
 <div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;        <span class="keywordflow">return</span> 1;</div>
@@ -2056,7 +2056,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l01987"></a><span class="lineno"> 1987</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 4; i++)</div>
 <div class="line"><a name="l01988"></a><span class="lineno"> 1988</span>&#160;        lua_insert(L, 1);</div>
 <div class="line"><a name="l01989"></a><span class="lineno"> 1989</span>&#160;</div>
-<div class="line"><a name="l01990"></a><span class="lineno"> 1990</span>&#160;    rc = <a class="code" href="dmconfig_8h.html#a29bf9736252215c659b7fc1710857fdc">dm_register_find_instance</a>(ctx, path, grp,</div>
+<div class="line"><a name="l01990"></a><span class="lineno"> 1990</span>&#160;    rc = <a class="code" href="group__API.html#ga29bf9736252215c659b7fc1710857fdc" title="Asynchonous find instance request. ">dm_register_find_instance</a>(ctx, path, grp,</div>
 <div class="line"><a name="l01991"></a><span class="lineno"> 1991</span>&#160;                       cb ? <a class="code" href="luawrapper_8c.html#a4c162cf02cabac75527f9231b91d8025">generic_Lua_callback</a> : NULL, cb);</div>
 <div class="line"><a name="l01992"></a><span class="lineno"> 1992</span>&#160;    <a class="code" href="group__API.html#gac5815cc998628d97a8c0e20ce888dfb6" title="free AVP group ">dm_grp_free</a>(grp);</div>
 <div class="line"><a name="l01993"></a><span class="lineno"> 1993</span>&#160;    lua_pushinteger(L, rc);</div>
@@ -2085,7 +2085,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l02016"></a><span class="lineno"> 2016</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l02017"></a><span class="lineno"> 2017</span>&#160;        path = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l02018"></a><span class="lineno"> 2018</span>&#160;</div>
-<div class="line"><a name="l02019"></a><span class="lineno"> 2019</span>&#160;    lua_pushinteger(L, rc = <a class="code" href="dmconfig_8h.html#adbb38a2a721013470042262dbc47ac7c">dm_send_cmd_dump</a>(ctx, path, &amp;result));</div>
+<div class="line"><a name="l02019"></a><span class="lineno"> 2019</span>&#160;    lua_pushinteger(L, rc = <a class="code" href="group__API.html#gadbb38a2a721013470042262dbc47ac7c" title="Synchonous send dump request. ">dm_send_cmd_dump</a>(ctx, path, &amp;result));</div>
 <div class="line"><a name="l02020"></a><span class="lineno"> 2020</span>&#160;    <span class="keywordflow">if</span> (rc)</div>
 <div class="line"><a name="l02021"></a><span class="lineno"> 2021</span>&#160;        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l02022"></a><span class="lineno"> 2022</span>&#160;</div>
@@ -2115,7 +2115,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l02046"></a><span class="lineno"> 2046</span>&#160;        lua_insert(L, 1);</div>
 <div class="line"><a name="l02047"></a><span class="lineno"> 2047</span>&#160;    }</div>
 <div class="line"><a name="l02048"></a><span class="lineno"> 2048</span>&#160;</div>
-<div class="line"><a name="l02049"></a><span class="lineno"> 2049</span>&#160;    rc = <a class="code" href="dmconfig_8h.html#ad0b1beb8bfd0d9c72a44e062d5adce7a">dm_register_cmd_dump</a>(ctx, path,</div>
+<div class="line"><a name="l02049"></a><span class="lineno"> 2049</span>&#160;    rc = <a class="code" href="group__API.html#gad0b1beb8bfd0d9c72a44e062d5adce7a" title="Asynchonous send dump request. ">dm_register_cmd_dump</a>(ctx, path,</div>
 <div class="line"><a name="l02050"></a><span class="lineno"> 2050</span>&#160;                  cb ? <a class="code" href="luawrapper_8c.html#a4c162cf02cabac75527f9231b91d8025">generic_Lua_callback</a> : NULL, cb);</div>
 <div class="line"><a name="l02051"></a><span class="lineno"> 2051</span>&#160;    lua_pushinteger(L, rc);</div>
 <div class="line"><a name="l02052"></a><span class="lineno"> 2052</span>&#160;    <span class="keywordflow">if</span> (rc)</div>
@@ -2196,8 +2196,8 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l02127"></a><span class="lineno"> 2127</span>&#160;{</div>
 <div class="line"><a name="l02128"></a><span class="lineno"> 2128</span>&#160;    <a class="code" href="structdmContext.html">DMCONTEXT</a> *ctx = luaL_checkudata(L, 1, <a class="code" href="luawrapper_8c.html#a1f21c68a64c1ea975e878faa758d42ba">DMCONFIG_SESSION_SEQUENTIAL_MT</a>);</div>
 <div class="line"><a name="l02129"></a><span class="lineno"> 2129</span>&#160;</div>
-<div class="line"><a name="l02130"></a><span class="lineno"> 2130</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="dmconfig_8h.html#ab59cd4f6168092529091cd7cb0591c46">dm_context_get_socket</a>(ctx) != -1)</div>
-<div class="line"><a name="l02131"></a><span class="lineno"> 2131</span>&#160;        <a class="code" href="dmconfig_8h.html#ab2fe86eb90a928f0c0c0481ee3a4b45f">dm_shutdown_socket</a>(ctx);</div>
+<div class="line"><a name="l02130"></a><span class="lineno"> 2130</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="group__API.html#gab59cd4f6168092529091cd7cb0591c46" title="get the socket from a socket context ">dm_context_get_socket</a>(ctx) != -1)</div>
+<div class="line"><a name="l02131"></a><span class="lineno"> 2131</span>&#160;        <a class="code" href="group__API.html#gab2fe86eb90a928f0c0c0481ee3a4b45f" title="shut down the socket in a socket context ">dm_shutdown_socket</a>(ctx);</div>
 <div class="line"><a name="l02132"></a><span class="lineno"> 2132</span>&#160;    <a class="code" href="dmconfig_8c.html#a562c6e688939717797b2fc3b7c6cfe45" title="free all requests in a DMCONTEXT ">dm_free_requests</a>(ctx);</div>
 <div class="line"><a name="l02133"></a><span class="lineno"> 2133</span>&#160;</div>
 <div class="line"><a name="l02134"></a><span class="lineno"> 2134</span>&#160;    <span class="keywordflow">return</span> 0;</div>
@@ -2208,8 +2208,8 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div class="line"><a name="l02139"></a><span class="lineno"> 2139</span>&#160;{</div>
 <div class="line"><a name="l02140"></a><span class="lineno"> 2140</span>&#160;    <a class="code" href="structdmContext.html">DMCONTEXT</a> *ctx = luaL_checkudata(L, 1, <a class="code" href="luawrapper_8c.html#aac8b65a9694fcebec24caeda11d62352">DMCONFIG_SESSION_EVENTS_MT</a>);</div>
 <div class="line"><a name="l02141"></a><span class="lineno"> 2141</span>&#160;</div>
-<div class="line"><a name="l02142"></a><span class="lineno"> 2142</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="dmconfig_8h.html#ab59cd4f6168092529091cd7cb0591c46">dm_context_get_socket</a>(ctx) != -1)</div>
-<div class="line"><a name="l02143"></a><span class="lineno"> 2143</span>&#160;        <a class="code" href="dmconfig_8h.html#ab2fe86eb90a928f0c0c0481ee3a4b45f">dm_shutdown_socket</a>(ctx);</div>
+<div class="line"><a name="l02142"></a><span class="lineno"> 2142</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="group__API.html#gab59cd4f6168092529091cd7cb0591c46" title="get the socket from a socket context ">dm_context_get_socket</a>(ctx) != -1)</div>
+<div class="line"><a name="l02143"></a><span class="lineno"> 2143</span>&#160;        <a class="code" href="group__API.html#gab2fe86eb90a928f0c0c0481ee3a4b45f" title="shut down the socket in a socket context ">dm_shutdown_socket</a>(ctx);</div>
 <div class="line"><a name="l02144"></a><span class="lineno"> 2144</span>&#160;    <a class="code" href="dmconfig_8c.html#a562c6e688939717797b2fc3b7c6cfe45" title="free all requests in a DMCONTEXT ">dm_free_requests</a>(ctx);</div>
 <div class="line"><a name="l02145"></a><span class="lineno"> 2145</span>&#160;</div>
 <div class="line"><a name="l02146"></a><span class="lineno"> 2146</span>&#160;    <span class="keywordflow">return</span> 0;</div>
@@ -2448,7 +2448,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_416a6a781e1de958de39213487b69f7e.html">libdmconfig</a></li><li class="navelem"><a class="el" href="luawrapper_8c.html">luawrapper.c</a></li>
-    <li class="footer">Generated on Wed Feb 26 2014 18:35:37 for mand-1.0 by
+    <li class="footer">Generated on Thu Feb 27 2014 11:36:15 for mand-1.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

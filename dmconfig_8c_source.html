@@ -353,7 +353,7 @@ $(document).ready(function(){initNavTree('dmconfig_8c_source.html','');});
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <a class="code" href="structconneventCtx.html">CONNEVENTCTX</a>        *ctx;</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keyword">struct </span>timeval      timeout;</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordtype">int</span>         fd = <a class="code" href="dmconfig_8h.html#ab59cd4f6168092529091cd7cb0591c46">dm_context_get_socket</a>(dmCtx);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordtype">int</span>         fd = <a class="code" href="group__API.html#gab59cd4f6168092529091cd7cb0591c46" title="get the socket from a socket context ">dm_context_get_socket</a>(dmCtx);</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordtype">int</span>         <a class="code" href="diammsg_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keyword">struct </span>sockaddr_un  sockaddr_un;</div>
@@ -402,7 +402,7 @@ $(document).ready(function(){initNavTree('dmconfig_8c_source.html','');});
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    ctx-&gt;<a class="code" href="structconneventCtx.html#ac545be8d395b8ab11f536a4d4dd0df00">dmCtx</a> = dmCtx;</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    event_set(&amp;ctx-&gt;<a class="code" href="structconneventCtx.html#a974adc73ad526cc38cf3d74eb3dd72f6">event</a>, fd, EV_WRITE, <a class="code" href="dmconfig_8c.html#a358f1d6bd4757bfd3c2bef7728c31bf7" title="default connect event handler, translate from libev to connect callback ">connectEvent</a>, ctx);</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    event_base_set(<a class="code" href="dmconfig_8h.html#a7607efb250238a2a5a1fd92d6a702ba8">dm_context_get_event_base</a>(dmCtx), &amp;ctx-&gt;<a class="code" href="structconneventCtx.html#a974adc73ad526cc38cf3d74eb3dd72f6">event</a>);</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    event_base_set(<a class="code" href="group__API.html#ga7607efb250238a2a5a1fd92d6a702ba8" title="get libev&#39;s libevent compatiblity event_base from a socket context ">dm_context_get_event_base</a>(dmCtx), &amp;ctx-&gt;<a class="code" href="structconneventCtx.html#a974adc73ad526cc38cf3d74eb3dd72f6">event</a>);</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    timeout.tv_sec = <a class="code" href="dmconfig_8h.html#a3dfa0695e9b57487895c58b432dba884">TIMEOUT_WRITE_REQUESTS</a>;    <span class="comment">/* if the connect was already successful, there should be no delay */</span></div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    timeout.tv_usec = 0;</div>
@@ -481,7 +481,7 @@ $(document).ready(function(){initNavTree('dmconfig_8c_source.html','');});
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keywordflow">if</span> (!event_pending(&amp;dmCtx-&gt;<a class="code" href="structdmContext.html#ac8256cf7cdccb0ff6016be585f4fb0e0">writeCtx</a>.<a class="code" href="structcommContext.html#a838dccf9d1180c1691684569ada63160">event</a>, EV_WRITE | EV_PERSIST, NULL)) {</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        event_set(&amp;dmCtx-&gt;<a class="code" href="structdmContext.html#ac8256cf7cdccb0ff6016be585f4fb0e0">writeCtx</a>.<a class="code" href="structcommContext.html#a838dccf9d1180c1691684569ada63160">event</a>, dmCtx-&gt;<a class="code" href="structdmContext.html#af7139786f70a774ebfb6d0c5bbe2b9a7">socket</a>,</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;              EV_WRITE | EV_PERSIST, <a class="code" href="dmconfig_8c.html#a06c1792d786948936b6ba09fa22ed0d6" title="libev write event handler, ">writeEvent</a>, dmCtx);</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        event_base_set(<a class="code" href="dmconfig_8h.html#a7607efb250238a2a5a1fd92d6a702ba8">dm_context_get_event_base</a>(dmCtx), &amp;dmCtx-&gt;<a class="code" href="structdmContext.html#ac8256cf7cdccb0ff6016be585f4fb0e0">writeCtx</a>.<a class="code" href="structcommContext.html#a838dccf9d1180c1691684569ada63160">event</a>);</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        event_base_set(<a class="code" href="group__API.html#ga7607efb250238a2a5a1fd92d6a702ba8" title="get libev&#39;s libevent compatiblity event_base from a socket context ">dm_context_get_event_base</a>(dmCtx), &amp;dmCtx-&gt;<a class="code" href="structdmContext.html#ac8256cf7cdccb0ff6016be585f4fb0e0">writeCtx</a>.<a class="code" href="structcommContext.html#a838dccf9d1180c1691684569ada63160">event</a>);</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        timeout.tv_sec = <a class="code" href="dmconfig_8h.html#a3dfa0695e9b57487895c58b432dba884">TIMEOUT_WRITE_REQUESTS</a>;</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        timeout.tv_usec = 0;</div>
@@ -621,17 +621,17 @@ $(document).ready(function(){initNavTree('dmconfig_8c_source.html','');});
 <div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;{</div>
 <div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    uint32_t rc;</div>
 <div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    <span class="keywordflow">if</span> ((rc = <a class="code" href="dmconfig_8h.html#a45b31b03f78167ddc748cc7fd3430add">dm_create_socket</a>(dmCtx, type)))</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    <span class="keywordflow">if</span> ((rc = <a class="code" href="group__API.html#ga45b31b03f78167ddc748cc7fd3430add" title="create a socket in a socket context ">dm_create_socket</a>(dmCtx, type)))</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        <span class="keywordflow">return</span> rc;</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;    ev_now_update(<a class="code" href="dmconfig_8h.html#a8c86479ec22fb2affb4dfc05158f0c35">dm_context_get_ev_loop</a>(dmCtx));   <span class="comment">/* workaround for libev time update problem</span></div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;    ev_now_update(<a class="code" href="group__API.html#ga8c86479ec22fb2affb4dfc05158f0c35" title="get libev&#39;s ev_loop from a socket context ">dm_context_get_ev_loop</a>(dmCtx));   <span class="comment">/* workaround for libev time update problem</span></div>
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;<span class="comment">                               otherwise ev_now() time is updated only at ev_loop */</span></div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;</div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    <span class="keywordflow">if</span> ((rc = <a class="code" href="group__API.html#ga7796c023219e9e229c4a6afe7ea617ad" title="start an asynchonous connect ">dm_register_connect_callback</a>(dmCtx, type,</div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;                           <a class="code" href="dmconfig_8c.html#ade2cb8bdbb444f502694df92ed5606ec" title="default, blocking connect handler ">generic_connectHandler</a>, &amp;rc)))</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;        <span class="keywordflow">return</span> rc;</div>
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    <span class="keywordflow">if</span> (event_base_dispatch(<a class="code" href="dmconfig_8h.html#a7607efb250238a2a5a1fd92d6a702ba8">dm_context_get_event_base</a>(dmCtx)) == -1)</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    <span class="keywordflow">if</span> (event_base_dispatch(<a class="code" href="group__API.html#ga7607efb250238a2a5a1fd92d6a702ba8" title="get libev&#39;s libevent compatiblity event_base from a socket context ">dm_context_get_event_base</a>(dmCtx)) == -1)</div>
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="codes_8h.html#a1a7c965dc30cd58142d9a5843b614c3aaec96337fbf36ac6948451e851c068981">RC_ERR_MISC</a>;</div>
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;</div>
 <div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    <span class="keywordflow">return</span> rc;</div>
@@ -658,7 +658,7 @@ $(document).ready(function(){initNavTree('dmconfig_8c_source.html','');});
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    } result;</div>
 <div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    uint32_t rc;</div>
 <div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    ev_now_update(<a class="code" href="dmconfig_8h.html#a8c86479ec22fb2affb4dfc05158f0c35">dm_context_get_ev_loop</a>(dmCtx));   <span class="comment">/* workaround for libev time update problem</span></div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    ev_now_update(<a class="code" href="group__API.html#ga8c86479ec22fb2affb4dfc05158f0c35" title="get libev&#39;s ev_loop from a socket context ">dm_context_get_ev_loop</a>(dmCtx));   <span class="comment">/* workaround for libev time update problem</span></div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;<span class="comment">                               otherwise ev_now() time is updated only at ev_loop */</span></div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;</div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    <span class="keywordflow">if</span> ((rc = <a class="code" href="group__API.html#gaefabec79f0460301ba6a2df1df3bf96b" title="send an asynchonous request with a list of arguments ">dm_generic_register_request</a>(dmCtx, code, grp,</div>
@@ -669,7 +669,7 @@ $(document).ready(function(){initNavTree('dmconfig_8c_source.html','');});
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    result.grp = grp;</div>
 <div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;    result.ret = ret;</div>
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    <span class="keywordflow">return</span> event_base_dispatch(<a class="code" href="dmconfig_8h.html#a7607efb250238a2a5a1fd92d6a702ba8">dm_context_get_event_base</a>(dmCtx)) == -1 ?</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    <span class="keywordflow">return</span> event_base_dispatch(<a class="code" href="group__API.html#ga7607efb250238a2a5a1fd92d6a702ba8" title="get libev&#39;s libevent compatiblity event_base from a socket context ">dm_context_get_event_base</a>(dmCtx)) == -1 ?</div>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;                            <a class="code" href="codes_8h.html#a1a7c965dc30cd58142d9a5843b614c3aaec96337fbf36ac6948451e851c068981">RC_ERR_MISC</a> : result.rc;</div>
 <div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;}</div>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;</div>
@@ -888,7 +888,7 @@ $(document).ready(function(){initNavTree('dmconfig_8c_source.html','');});
 <div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;                       EV_READ | EV_PERSIST, NULL)) {</div>
 <div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;                event_set(&amp;dmCtx-&gt;<a class="code" href="structdmContext.html#abd7f250efa280979f732fd8182db7081">readCtx</a>.<a class="code" href="structcommContext.html#a838dccf9d1180c1691684569ada63160">event</a>, dmCtx-&gt;<a class="code" href="structdmContext.html#af7139786f70a774ebfb6d0c5bbe2b9a7">socket</a>,</div>
 <div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;                      EV_READ | EV_PERSIST, <a class="code" href="dmconfig_8c.html#ac8769c791e5d09dd69dba067b973f54f" title="libev read event handler, ">readEvent</a>, dmCtx);</div>
-<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;                event_base_set(<a class="code" href="dmconfig_8h.html#a7607efb250238a2a5a1fd92d6a702ba8">dm_context_get_event_base</a>(dmCtx),</div>
+<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;                event_base_set(<a class="code" href="group__API.html#ga7607efb250238a2a5a1fd92d6a702ba8" title="get libev&#39;s libevent compatiblity event_base from a socket context ">dm_context_get_event_base</a>(dmCtx),</div>
 <div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;                           &amp;dmCtx-&gt;<a class="code" href="structdmContext.html#abd7f250efa280979f732fd8182db7081">readCtx</a>.<a class="code" href="structcommContext.html#a838dccf9d1180c1691684569ada63160">event</a>);</div>
 <div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;</div>
 <div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;                timeout.tv_sec = <a class="code" href="dmconfig_8h.html#a1fa617e5e11f9247900517421e670131">TIMEOUT_READ_REQUESTS</a>;</div>
@@ -1423,7 +1423,7 @@ $(document).ready(function(){initNavTree('dmconfig_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_416a6a781e1de958de39213487b69f7e.html">libdmconfig</a></li><li class="navelem"><a class="el" href="dmconfig_8c.html">dmconfig.c</a></li>
-    <li class="footer">Generated on Wed Feb 26 2014 18:35:37 for mand-1.0 by
+    <li class="footer">Generated on Thu Feb 27 2014 11:36:15 for mand-1.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
