@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('luawrapper_8c.html','');});
 <code>#include &lt;event.h&gt;</code><br/>
 <code>#include &lt;lua.h&gt;</code><br/>
 <code>#include &lt;lauxlib.h&gt;</code><br/>
-<code>#include &quot;<a class="el" href="diammsg_8h_source.html">diammsg.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="dmmsg_8h_source.html">dmmsg.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="codes_8h_source.html">codes.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="dmconfig_8h_source.html">dmconfig.h</a>&quot;</code><br/>
 <code>#include &quot;mand/dm_lua.h&quot;</code><br/>
@@ -143,29 +143,29 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a45359914708a6e95f6b19cb92251cef6"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a45359914708a6e95f6b19cb92251cef6">Lua_decode_get_session_info</a> (lua_State *L, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *answer)</td></tr>
-<tr class="separator:a45359914708a6e95f6b19cb92251cef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a419117a030f84117cf4d7161cd939b00"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a419117a030f84117cf4d7161cd939b00">Lua_decode_get_cfg_session_info</a> (lua_State *L, uint32_t sessionid, uint32_t <a class="el" href="diammsg_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>, struct timeval timeout)</td></tr>
+<tr class="memitem:afc924031a91b89b5a5b75792c50e3700"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#afc924031a91b89b5a5b75792c50e3700">Lua_decode_get_session_info</a> (lua_State *L, <a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> *answer)</td></tr>
+<tr class="separator:afc924031a91b89b5a5b75792c50e3700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419117a030f84117cf4d7161cd939b00"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a419117a030f84117cf4d7161cd939b00">Lua_decode_get_cfg_session_info</a> (lua_State *L, uint32_t sessionid, uint32_t <a class="el" href="dmmsg_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>, struct timeval timeout)</td></tr>
 <tr class="separator:a419117a030f84117cf4d7161cd939b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae40860a6fb2bdb52da3fa4949d0889b2"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#ae40860a6fb2bdb52da3fa4949d0889b2">Lua_decode_unknown</a> (lua_State *L, uint32_t type, void *data, size_t len)</td></tr>
 <tr class="separator:ae40860a6fb2bdb52da3fa4949d0889b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af954563ce9fd559a17c7df60b06567a8"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#af954563ce9fd559a17c7df60b06567a8">Lua_decode_get</a> (lua_State *L, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *answer)</td></tr>
-<tr class="separator:af954563ce9fd559a17c7df60b06567a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ccc33eb782142d91c4fcdb9e0d9ef91"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a4ccc33eb782142d91c4fcdb9e0d9ef91">Lua_decode_list</a> (lua_State *L, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *grp, int *nodes)</td></tr>
-<tr class="separator:a4ccc33eb782142d91c4fcdb9e0d9ef91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96a9e47d544c1173ede6a7bdf718d59d"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a96a9e47d544c1173ede6a7bdf718d59d">Lua_decode_retrieve_enums</a> (lua_State *L, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *answer)</td></tr>
-<tr class="separator:a96a9e47d544c1173ede6a7bdf718d59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78ca53c3ddbdb6a94de48c9588d7aa37"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a78ca53c3ddbdb6a94de48c9588d7aa37">Lua_decode_notifications</a> (lua_State *L, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *answer)</td></tr>
-<tr class="separator:a78ca53c3ddbdb6a94de48c9588d7aa37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c162cf02cabac75527f9231b91d8025"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a4c162cf02cabac75527f9231b91d8025">generic_Lua_callback</a> (<a class="el" href="dmconfig_8h.html#a61dda853a30b9afb7e773dec32d1efe0">DMCONFIG_EVENT</a> event, <a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, void *user_data, uint32_t answer_rc, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *answer_grp)</td></tr>
-<tr class="separator:a4c162cf02cabac75527f9231b91d8025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab266299af0d34144327c7d6bbd0e76d9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#ab266299af0d34144327c7d6bbd0e76d9">generic_Lua_connect_callback</a> (<a class="el" href="dmconfig_8h.html#a61dda853a30b9afb7e773dec32d1efe0">DMCONFIG_EVENT</a> event, <a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx <a class="el" href="diammsg_8h.html#a84b8557ae255d39fcdcd87abfc5c1c47">__attribute__</a>((unused)), void *userdata)</td></tr>
+<tr class="memitem:aea90c4dd8395ad163a1591f1c92ddaa3"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#aea90c4dd8395ad163a1591f1c92ddaa3">Lua_decode_get</a> (lua_State *L, <a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> *answer)</td></tr>
+<tr class="separator:aea90c4dd8395ad163a1591f1c92ddaa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6985d446d3e1ba5fa34c19fe25a021d"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#ac6985d446d3e1ba5fa34c19fe25a021d">Lua_decode_list</a> (lua_State *L, <a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> *grp, int *nodes)</td></tr>
+<tr class="separator:ac6985d446d3e1ba5fa34c19fe25a021d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a4f812926b00d853ea1fb813f7831e"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#af9a4f812926b00d853ea1fb813f7831e">Lua_decode_retrieve_enums</a> (lua_State *L, <a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> *answer)</td></tr>
+<tr class="separator:af9a4f812926b00d853ea1fb813f7831e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a813715a5534a0049ba6f0f879c9fa282"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a813715a5534a0049ba6f0f879c9fa282">Lua_decode_notifications</a> (lua_State *L, <a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> *answer)</td></tr>
+<tr class="separator:a813715a5534a0049ba6f0f879c9fa282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f385cbc5f1124abf08e906bd0521fec"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a4f385cbc5f1124abf08e906bd0521fec">generic_Lua_callback</a> (<a class="el" href="dmconfig_8h.html#a61dda853a30b9afb7e773dec32d1efe0">DMCONFIG_EVENT</a> event, <a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx, void *user_data, uint32_t answer_rc, <a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> *answer_grp)</td></tr>
+<tr class="separator:a4f385cbc5f1124abf08e906bd0521fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab266299af0d34144327c7d6bbd0e76d9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#ab266299af0d34144327c7d6bbd0e76d9">generic_Lua_connect_callback</a> (<a class="el" href="dmconfig_8h.html#a61dda853a30b9afb7e773dec32d1efe0">DMCONFIG_EVENT</a> event, <a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx <a class="el" href="dmmsg_8h.html#a663c2188c4fb7b11f4b33c8daa2e0131">__attribute__</a>((unused)), void *userdata)</td></tr>
 <tr class="separator:ab266299af0d34144327c7d6bbd0e76d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86a85fab41cb85cd444a00301ee984e2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a86a85fab41cb85cd444a00301ee984e2">generic_Lua_active_notify_callback</a> (<a class="el" href="dmconfig_8h.html#a61dda853a30b9afb7e773dec32d1efe0">DMCONFIG_EVENT</a> event, <a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx <a class="el" href="diammsg_8h.html#a84b8557ae255d39fcdcd87abfc5c1c47">__attribute__</a>((unused)), void *userdata, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *grp)</td></tr>
-<tr class="separator:a86a85fab41cb85cd444a00301ee984e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c9e13043bcc9b81fbdb9ffadba670e7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a0c9e13043bcc9b81fbdb9ffadba670e7">generic_Lua_active_notify_callback</a> (<a class="el" href="dmconfig_8h.html#a61dda853a30b9afb7e773dec32d1efe0">DMCONFIG_EVENT</a> event, <a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> *dmCtx <a class="el" href="dmmsg_8h.html#a663c2188c4fb7b11f4b33c8daa2e0131">__attribute__</a>((unused)), void *userdata, <a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> *grp)</td></tr>
+<tr class="separator:a0c9e13043bcc9b81fbdb9ffadba670e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96c9fea92085ee1584c6b0e9273e649e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a96c9fea92085ee1584c6b0e9273e649e">Lua_init_eval</a> (lua_State *L, char *udata, <a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> **dmCtx, int *type)</td></tr>
 <tr class="separator:a96c9fea92085ee1584c6b0e9273e649e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a929dd93e9ab32c03e6b8d53517cd2055"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a929dd93e9ab32c03e6b8d53517cd2055">Lua_register_eval</a> (lua_State *L, uint32_t <a class="el" href="diammsg_8h.html#a966576744a473fafb7687f8e5649941f">code</a>, <a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> **ctx, <a class="el" href="luawrapper_8c.html#a641a10a697401dc851751d1b6b7a9a82">LUA_CALLBACK</a> **cb)</td></tr>
+<tr class="memitem:a929dd93e9ab32c03e6b8d53517cd2055"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a929dd93e9ab32c03e6b8d53517cd2055">Lua_register_eval</a> (lua_State *L, uint32_t <a class="el" href="dmmsg_8h.html#a966576744a473fafb7687f8e5649941f">code</a>, <a class="el" href="dmconfig_8h.html#a677f1d6ecda984261236780efd5caa64">DMCONTEXT</a> **ctx, <a class="el" href="luawrapper_8c.html#a641a10a697401dc851751d1b6b7a9a82">LUA_CALLBACK</a> **cb)</td></tr>
 <tr class="separator:a929dd93e9ab32c03e6b8d53517cd2055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e874767ebb421e129ea7890e2e37865"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a1e874767ebb421e129ea7890e2e37865">Lua_generic_shutdown</a> (lua_State *L, const char *udata)</td></tr>
 <tr class="separator:a1e874767ebb421e129ea7890e2e37865"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,17 +173,17 @@ Functions</h2></td></tr>
 <tr class="separator:aebf4e82f59fd29d9a96b9f9daae1f7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7202b78539057ca4d79f47aff5b8d4e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#ac7202b78539057ca4d79f47aff5b8d4e">Lua_generic_get_sessionid</a> (lua_State *L, const char *udata)</td></tr>
 <tr class="separator:ac7202b78539057ca4d79f47aff5b8d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc2280269fec1545f29906a06a2fd905"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#adc2280269fec1545f29906a06a2fd905">Lua_build_param_notify_grp</a> (lua_State *L, uint8_t *isActiveNotify)</td></tr>
-<tr class="separator:adc2280269fec1545f29906a06a2fd905"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d008da1c3f7b428f2f6a8db6067a69a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a6d008da1c3f7b428f2f6a8db6067a69a">Lua_encode_value</a> (lua_State *L, uint32_t type, const char *path, <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> **grp)</td></tr>
-<tr class="separator:a6d008da1c3f7b428f2f6a8db6067a69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f0c7b163544a6e94368616e581c15b4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a6f0c7b163544a6e94368616e581c15b4">Lua_build_set_grp</a> (lua_State *L)</td></tr>
-<tr class="separator:a6f0c7b163544a6e94368616e581c15b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34ac5487d20a89093d1127e0743411b4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a34ac5487d20a89093d1127e0743411b4">Lua_build_get_grp</a> (lua_State *L)</td></tr>
-<tr class="separator:a34ac5487d20a89093d1127e0743411b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54b994773d50e92480861c2e650a96b8"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a54b994773d50e92480861c2e650a96b8">Lua_generic_request</a> (lua_State *L, uint32_t <a class="el" href="diammsg_8h.html#a966576744a473fafb7687f8e5649941f">code</a>)</td></tr>
+<tr class="memitem:afe02a6ff86ab28a536c50d1a1ac3a39e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#afe02a6ff86ab28a536c50d1a1ac3a39e">Lua_build_param_notify_grp</a> (lua_State *L, uint8_t *isActiveNotify)</td></tr>
+<tr class="separator:afe02a6ff86ab28a536c50d1a1ac3a39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b80ad389935abf254b31dcfea947f38"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a7b80ad389935abf254b31dcfea947f38">Lua_encode_value</a> (lua_State *L, uint32_t type, const char *path, <a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> **grp)</td></tr>
+<tr class="separator:a7b80ad389935abf254b31dcfea947f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8a653fd3ddff630b8e75547d13d53c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#afe8a653fd3ddff630b8e75547d13d53c">Lua_build_set_grp</a> (lua_State *L)</td></tr>
+<tr class="separator:afe8a653fd3ddff630b8e75547d13d53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a542f59f8c0f1cbe8980fe8a5d4cffa13"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a542f59f8c0f1cbe8980fe8a5d4cffa13">Lua_build_get_grp</a> (lua_State *L)</td></tr>
+<tr class="separator:a542f59f8c0f1cbe8980fe8a5d4cffa13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b994773d50e92480861c2e650a96b8"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a54b994773d50e92480861c2e650a96b8">Lua_generic_request</a> (lua_State *L, uint32_t <a class="el" href="dmmsg_8h.html#a966576744a473fafb7687f8e5649941f">code</a>)</td></tr>
 <tr class="separator:a54b994773d50e92480861c2e650a96b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95d117b69a6cc594dd5b676443f35c34"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a95d117b69a6cc594dd5b676443f35c34">Lua_generic_register</a> (lua_State *L, uint32_t <a class="el" href="diammsg_8h.html#a966576744a473fafb7687f8e5649941f">code</a>)</td></tr>
+<tr class="memitem:a95d117b69a6cc594dd5b676443f35c34"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a95d117b69a6cc594dd5b676443f35c34">Lua_generic_register</a> (lua_State *L, uint32_t <a class="el" href="dmmsg_8h.html#a966576744a473fafb7687f8e5649941f">code</a>)</td></tr>
 <tr class="separator:a95d117b69a6cc594dd5b676443f35c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84f92fbb4ba5c19f5e98651e941c5a1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="luawrapper_8c.html#a84f92fbb4ba5c19f5e98651e941c5a1b">LUA_SIG</a> (setDebugLevel)</td></tr>
 <tr class="separator:a84f92fbb4ba5c19f5e98651e941c5a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -664,7 +664,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a86a85fab41cb85cd444a00301ee984e2"></a>
+<a class="anchor" id="a0c9e13043bcc9b81fbdb9ffadba670e7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -692,7 +692,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> *&#160;</td>
           <td class="paramname"><em>grp</em>&#160;</td>
         </tr>
         <tr>
@@ -716,7 +716,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4c162cf02cabac75527f9231b91d8025"></a>
+<a class="anchor" id="a4f385cbc5f1124abf08e906bd0521fec"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -750,7 +750,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> *&#160;</td>
           <td class="paramname"><em>answer_grp</em>&#160;</td>
         </tr>
         <tr>
@@ -768,7 +768,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="luawrapper_8c_source.html#l00469">469</a> of file <a class="el" href="luawrapper_8c_source.html">luawrapper.c</a>.</p>
 
-<p>References <a class="el" href="luawrapper_8c_source.html#l00047">_Lua_callback::callback_ref</a>, <a class="el" href="luawrapper_8c_source.html#l00052">_Lua_callback::callbackDone</a>, <a class="el" href="codes_8h_source.html#l00031">CMD_CFGSESSIONINFO</a>, <a class="el" href="codes_8h_source.html#l00021">CMD_DB_ADDINSTANCE</a>, <a class="el" href="codes_8h_source.html#l00020">CMD_DB_DUMP</a>, <a class="el" href="codes_8h_source.html#l00026">CMD_DB_FINDINSTANCE</a>, <a class="el" href="codes_8h_source.html#l00017">CMD_DB_GET</a>, <a class="el" href="codes_8h_source.html#l00018">CMD_DB_LIST</a>, <a class="el" href="codes_8h_source.html#l00019">CMD_DB_RETRIEVE_ENUMS</a>, <a class="el" href="codes_8h_source.html#l00028">CMD_ENDSESSION</a>, <a class="el" href="codes_8h_source.html#l00036">CMD_GET_PASSIVE_NOTIFICATIONS</a>, <a class="el" href="codes_8h_source.html#l00030">CMD_SESSIONINFO</a>, <a class="el" href="codes_8h_source.html#l00027">CMD_STARTSESSION</a>, <a class="el" href="luawrapper_8c_source.html#l00050">_Lua_callback::code</a>, <a class="el" href="luawrapper_8c_source.html#l00046">_Lua_callback::context_ref</a>, <a class="el" href="dmconfig_8h_source.html#l01223">dm_context_set_sessionid()</a>, <a class="el" href="dmconfig_8h_source.html#l02159">dm_decode_get_cfg_session_info()</a>, <a class="el" href="dmconfig_8h_source.html#l02140">dm_decode_start_session()</a>, <a class="el" href="dmconfig_8h_source.html#l02194">dm_decode_string()</a>, <a class="el" href="dmconfig_8h_source.html#l02210">dm_decode_uint16()</a>, <a class="el" href="dmconfig_8h_source.html#l00085">DMCONFIG_ANSWER_READY</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="luawrapper_8c_source.html#l00044">_Lua_callback::L</a>, <a class="el" href="luawrapper_8c_source.html#l00209">Lua_decode_get()</a>, <a class="el" href="luawrapper_8c_source.html#l00172">Lua_decode_get_cfg_session_info()</a>, <a class="el" href="luawrapper_8c_source.html#l00158">Lua_decode_get_session_info()</a>, <a class="el" href="luawrapper_8c_source.html#l00240">Lua_decode_list()</a>, <a class="el" href="luawrapper_8c_source.html#l00394">Lua_decode_notifications()</a>, <a class="el" href="luawrapper_8c_source.html#l00376">Lua_decode_retrieve_enums()</a>, and <a class="el" href="luawrapper_8c_source.html#l00048">_Lua_callback::user_data_ref</a>.</p>
+<p>References <a class="el" href="luawrapper_8c_source.html#l00047">_Lua_callback::callback_ref</a>, <a class="el" href="luawrapper_8c_source.html#l00052">_Lua_callback::callbackDone</a>, <a class="el" href="codes_8h_source.html#l00031">CMD_CFGSESSIONINFO</a>, <a class="el" href="codes_8h_source.html#l00021">CMD_DB_ADDINSTANCE</a>, <a class="el" href="codes_8h_source.html#l00020">CMD_DB_DUMP</a>, <a class="el" href="codes_8h_source.html#l00026">CMD_DB_FINDINSTANCE</a>, <a class="el" href="codes_8h_source.html#l00017">CMD_DB_GET</a>, <a class="el" href="codes_8h_source.html#l00018">CMD_DB_LIST</a>, <a class="el" href="codes_8h_source.html#l00019">CMD_DB_RETRIEVE_ENUMS</a>, <a class="el" href="codes_8h_source.html#l00028">CMD_ENDSESSION</a>, <a class="el" href="codes_8h_source.html#l00036">CMD_GET_PASSIVE_NOTIFICATIONS</a>, <a class="el" href="codes_8h_source.html#l00030">CMD_SESSIONINFO</a>, <a class="el" href="codes_8h_source.html#l00027">CMD_STARTSESSION</a>, <a class="el" href="luawrapper_8c_source.html#l00050">_Lua_callback::code</a>, <a class="el" href="luawrapper_8c_source.html#l00046">_Lua_callback::context_ref</a>, <a class="el" href="dmconfig_8h_source.html#l01223">dm_context_set_sessionid()</a>, <a class="el" href="dmconfig_8h_source.html#l02159">dm_decode_get_cfg_session_info()</a>, <a class="el" href="dmconfig_8h_source.html#l02140">dm_decode_start_session()</a>, <a class="el" href="dmconfig_8h_source.html#l02194">dm_decode_string()</a>, <a class="el" href="dmconfig_8h_source.html#l02210">dm_decode_uint16()</a>, <a class="el" href="dmconfig_8h_source.html#l00085">DMCONFIG_ANSWER_READY</a>, <a class="el" href="dmmsg_8h_source.html#l00302">flags</a>, <a class="el" href="luawrapper_8c_source.html#l00044">_Lua_callback::L</a>, <a class="el" href="luawrapper_8c_source.html#l00209">Lua_decode_get()</a>, <a class="el" href="luawrapper_8c_source.html#l00172">Lua_decode_get_cfg_session_info()</a>, <a class="el" href="luawrapper_8c_source.html#l00158">Lua_decode_get_session_info()</a>, <a class="el" href="luawrapper_8c_source.html#l00240">Lua_decode_list()</a>, <a class="el" href="luawrapper_8c_source.html#l00394">Lua_decode_notifications()</a>, <a class="el" href="luawrapper_8c_source.html#l00376">Lua_decode_retrieve_enums()</a>, and <a class="el" href="luawrapper_8c_source.html#l00048">_Lua_callback::user_data_ref</a>.</p>
 
 <p>Referenced by <a class="el" href="luawrapper_8c_source.html#l02079">Lua_generic_register()</a>, and <a class="el" href="luawrapper_8c_source.html#l00854">LUA_SIG_REGISTER()</a>.</p>
 
@@ -820,7 +820,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a34ac5487d20a89093d1127e0743411b4"></a>
+<a class="anchor" id="a542f59f8c0f1cbe8980fe8a5d4cffa13"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -828,7 +828,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> * Lua_build_get_grp </td>
+          <td class="memname">static <a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> * Lua_build_get_grp </td>
           <td>(</td>
           <td class="paramtype">lua_State *&#160;</td>
           <td class="paramname"><em>L</em>)</td><td></td>
@@ -844,13 +844,13 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="luawrapper_8c_source.html#l01626">1626</a> of file <a class="el" href="luawrapper_8c_source.html">luawrapper.c</a>.</p>
 
-<p>References <a class="el" href="codes_8h_source.html#l00075">AVP_ABSTICKS</a>, <a class="el" href="codes_8h_source.html#l00047">AVP_ADDRESS</a>, <a class="el" href="codes_8h_source.html#l00078">AVP_BINARY</a>, <a class="el" href="codes_8h_source.html#l00048">AVP_BOOL</a>, <a class="el" href="codes_8h_source.html#l00043">AVP_COUNTER</a>, <a class="el" href="codes_8h_source.html#l00049">AVP_DATE</a>, <a class="el" href="codes_8h_source.html#l00045">AVP_ENUM</a>, <a class="el" href="codes_8h_source.html#l00044">AVP_ENUMID</a>, <a class="el" href="codes_8h_source.html#l00097">AVP_INT32</a>, <a class="el" href="codes_8h_source.html#l00100">AVP_INT64</a>, <a class="el" href="codes_8h_source.html#l00041">AVP_PATH</a>, <a class="el" href="codes_8h_source.html#l00076">AVP_RELTICKS</a>, <a class="el" href="codes_8h_source.html#l00046">AVP_STRING</a>, <a class="el" href="codes_8h_source.html#l00042">AVP_TYPE_PATH</a>, <a class="el" href="codes_8h_source.html#l00099">AVP_UINT32</a>, <a class="el" href="codes_8h_source.html#l00101">AVP_UINT64</a>, <a class="el" href="codes_8h_source.html#l00074">AVP_UNKNOWN</a>, <a class="el" href="diammsg_8c_source.html#l00283">diam_avpgrp_add_uint32_string()</a>, <a class="el" href="dmconfig_8h_source.html#l00542">dm_grp_new()</a>, <a class="el" href="luawrapper_8c_source.html#l01536">TABLE_ERR</a>, and <a class="el" href="codes_8h_source.html#l00011">VP_TRAVELPING</a>.</p>
+<p>References <a class="el" href="codes_8h_source.html#l00075">AVP_ABSTICKS</a>, <a class="el" href="codes_8h_source.html#l00047">AVP_ADDRESS</a>, <a class="el" href="codes_8h_source.html#l00078">AVP_BINARY</a>, <a class="el" href="codes_8h_source.html#l00048">AVP_BOOL</a>, <a class="el" href="codes_8h_source.html#l00043">AVP_COUNTER</a>, <a class="el" href="codes_8h_source.html#l00049">AVP_DATE</a>, <a class="el" href="codes_8h_source.html#l00045">AVP_ENUM</a>, <a class="el" href="codes_8h_source.html#l00044">AVP_ENUMID</a>, <a class="el" href="codes_8h_source.html#l00097">AVP_INT32</a>, <a class="el" href="codes_8h_source.html#l00100">AVP_INT64</a>, <a class="el" href="codes_8h_source.html#l00041">AVP_PATH</a>, <a class="el" href="codes_8h_source.html#l00076">AVP_RELTICKS</a>, <a class="el" href="codes_8h_source.html#l00046">AVP_STRING</a>, <a class="el" href="codes_8h_source.html#l00042">AVP_TYPE_PATH</a>, <a class="el" href="codes_8h_source.html#l00099">AVP_UINT32</a>, <a class="el" href="codes_8h_source.html#l00101">AVP_UINT64</a>, <a class="el" href="codes_8h_source.html#l00074">AVP_UNKNOWN</a>, <a class="el" href="dmmsg_8c_source.html#l00283">dm_avpgrp_add_uint32_string()</a>, <a class="el" href="dmconfig_8h_source.html#l00542">dm_grp_new()</a>, <a class="el" href="luawrapper_8c_source.html#l01536">TABLE_ERR</a>, and <a class="el" href="codes_8h_source.html#l00011">VP_TRAVELPING</a>.</p>
 
 <p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01692">LUA_SIG()</a>, and <a class="el" href="luawrapper_8c_source.html#l01718">LUA_SIG_REGISTER()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="adc2280269fec1545f29906a06a2fd905"></a>
+<a class="anchor" id="afe02a6ff86ab28a536c50d1a1ac3a39e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -858,7 +858,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> * Lua_build_param_notify_grp </td>
+          <td class="memname">static <a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> * Lua_build_param_notify_grp </td>
           <td>(</td>
           <td class="paramtype">lua_State *&#160;</td>
           <td class="paramname"><em>L</em>, </td>
@@ -890,7 +890,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6f0c7b163544a6e94368616e581c15b4"></a>
+<a class="anchor" id="afe8a653fd3ddff630b8e75547d13d53c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -898,7 +898,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> * Lua_build_set_grp </td>
+          <td class="memname">static <a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> * Lua_build_set_grp </td>
           <td>(</td>
           <td class="paramtype">lua_State *&#160;</td>
           <td class="paramname"><em>L</em>)</td><td></td>
@@ -920,7 +920,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af954563ce9fd559a17c7df60b06567a8"></a>
+<a class="anchor" id="aea90c4dd8395ad163a1591f1c92ddaa3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -936,7 +936,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> *&#160;</td>
           <td class="paramname"><em>answer</em>&#160;</td>
         </tr>
         <tr>
@@ -954,7 +954,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="luawrapper_8c_source.html#l00209">209</a> of file <a class="el" href="luawrapper_8c_source.html">luawrapper.c</a>.</p>
 
-<p>References <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="luawrapper_8c_source.html#l00187">Lua_decode_unknown()</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
+<p>References <a class="el" href="dmmsg_8h_source.html#l00269">dm_avpgrp_get_avp()</a>, <a class="el" href="dmmsg_8h_source.html#l00302">flags</a>, <a class="el" href="luawrapper_8c_source.html#l00187">Lua_decode_unknown()</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="dmmsg_8h_source.html#l00304">vendor_id</a>.</p>
 
 <p>Referenced by <a class="el" href="luawrapper_8c_source.html#l00469">generic_Lua_callback()</a>, and <a class="el" href="luawrapper_8c_source.html#l01692">LUA_SIG()</a>.</p>
 
@@ -1012,7 +1012,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a45359914708a6e95f6b19cb92251cef6"></a>
+<a class="anchor" id="afc924031a91b89b5a5b75792c50e3700"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1028,7 +1028,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> *&#160;</td>
           <td class="paramname"><em>answer</em>&#160;</td>
         </tr>
         <tr>
@@ -1046,13 +1046,13 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="luawrapper_8c_source.html#l00158">158</a> of file <a class="el" href="luawrapper_8c_source.html">luawrapper.c</a>.</p>
 
-<p>References <a class="el" href="dmconfig_8h_source.html#l02153">dm_decode_get_session_info()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, and <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>.</p>
+<p>References <a class="el" href="dmconfig_8h_source.html#l02153">dm_decode_get_session_info()</a>, <a class="el" href="dmmsg_8h_source.html#l00302">flags</a>, and <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>.</p>
 
 <p>Referenced by <a class="el" href="luawrapper_8c_source.html#l00469">generic_Lua_callback()</a>, and <a class="el" href="luawrapper_8c_source.html#l00998">LUA_SIG()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4ccc33eb782142d91c4fcdb9e0d9ef91"></a>
+<a class="anchor" id="ac6985d446d3e1ba5fa34c19fe25a021d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1068,7 +1068,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> *&#160;</td>
           <td class="paramname"><em>grp</em>, </td>
         </tr>
         <tr>
@@ -1092,13 +1092,13 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="luawrapper_8c_source.html#l00240">240</a> of file <a class="el" href="luawrapper_8c_source.html">luawrapper.c</a>.</p>
 
-<p>References <a class="el" href="codes_8h_source.html#l00080">AVP_CONTAINER</a>, <a class="el" href="codes_8h_source.html#l00088">AVP_NODE_DATATYPE</a>, <a class="el" href="codes_8h_source.html#l00081">AVP_NODE_NAME</a>, <a class="el" href="codes_8h_source.html#l00089">AVP_NODE_SIZE</a>, <a class="el" href="codes_8h_source.html#l00082">AVP_NODE_TYPE</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="diammsg_8c_source.html#l00173">diam_decode_avpgrp()</a>, <a class="el" href="diammsg_8h_source.html#l00438">diam_get_uint32_avp()</a>, <a class="el" href="dmconfig_8h_source.html#l00554">dm_grp_free()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="luawrapper_8c_source.html#l00187">Lua_decode_unknown()</a>, <a class="el" href="codes_8h_source.html#l00084">NODE_OBJECT</a>, <a class="el" href="codes_8h_source.html#l00086">NODE_PARAMETER</a>, <a class="el" href="codes_8h_source.html#l00085">NODE_TABLE</a>, <a class="el" href="codes_8h_source.html#l00056">RC_ERR_ALLOC</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
+<p>References <a class="el" href="codes_8h_source.html#l00080">AVP_CONTAINER</a>, <a class="el" href="codes_8h_source.html#l00088">AVP_NODE_DATATYPE</a>, <a class="el" href="codes_8h_source.html#l00081">AVP_NODE_NAME</a>, <a class="el" href="codes_8h_source.html#l00089">AVP_NODE_SIZE</a>, <a class="el" href="codes_8h_source.html#l00082">AVP_NODE_TYPE</a>, <a class="el" href="dmmsg_8h_source.html#l00301">code</a>, <a class="el" href="dmmsg_8h_source.html#l00269">dm_avpgrp_get_avp()</a>, <a class="el" href="dmmsg_8c_source.html#l00173">dm_decode_avpgrp()</a>, <a class="el" href="dmmsg_8h_source.html#l00438">dm_get_uint32_avp()</a>, <a class="el" href="dmconfig_8h_source.html#l00554">dm_grp_free()</a>, <a class="el" href="dmmsg_8h_source.html#l00302">flags</a>, <a class="el" href="luawrapper_8c_source.html#l00187">Lua_decode_unknown()</a>, <a class="el" href="codes_8h_source.html#l00084">NODE_OBJECT</a>, <a class="el" href="codes_8h_source.html#l00086">NODE_PARAMETER</a>, <a class="el" href="codes_8h_source.html#l00085">NODE_TABLE</a>, <a class="el" href="codes_8h_source.html#l00056">RC_ERR_ALLOC</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, <a class="el" href="codes_8h_source.html#l00053">RC_OK</a>, and <a class="el" href="dmmsg_8h_source.html#l00304">vendor_id</a>.</p>
 
 <p>Referenced by <a class="el" href="luawrapper_8c_source.html#l00469">generic_Lua_callback()</a>, and <a class="el" href="luawrapper_8c_source.html#l01045">LUA_SIG()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a78ca53c3ddbdb6a94de48c9588d7aa37"></a>
+<a class="anchor" id="a813715a5534a0049ba6f0f879c9fa282"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1114,7 +1114,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> *&#160;</td>
           <td class="paramname"><em>answer</em>&#160;</td>
         </tr>
         <tr>
@@ -1132,13 +1132,13 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="luawrapper_8c_source.html#l00394">394</a> of file <a class="el" href="luawrapper_8c_source.html">luawrapper.c</a>.</p>
 
-<p>References <a class="el" href="diammsg_8h_source.html#l00269">diam_avpgrp_get_avp()</a>, <a class="el" href="dmconfig_8h_source.html#l02573">dm_decode_instance_created()</a>, <a class="el" href="dmconfig_8h_source.html#l02567">dm_decode_instance_deleted()</a>, <a class="el" href="dmconfig_8c_source.html#l01532">dm_decode_notifications()</a>, <a class="el" href="dmconfig_8h_source.html#l02560">dm_decode_parameter_changed()</a>, <a class="el" href="dmconfig_8h_source.html#l00554">dm_grp_free()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="luawrapper_8c_source.html#l00187">Lua_decode_unknown()</a>, <a class="el" href="codes_8h_source.html#l00072">NOTIFY_INSTANCE_CREATED</a>, <a class="el" href="codes_8h_source.html#l00071">NOTIFY_INSTANCE_DELETED</a>, <a class="el" href="codes_8h_source.html#l00069">NOTIFY_NOTHING</a>, <a class="el" href="codes_8h_source.html#l00070">NOTIFY_PARAMETER_CHANGED</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, and <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>.</p>
+<p>References <a class="el" href="dmmsg_8h_source.html#l00269">dm_avpgrp_get_avp()</a>, <a class="el" href="dmconfig_8h_source.html#l02573">dm_decode_instance_created()</a>, <a class="el" href="dmconfig_8h_source.html#l02567">dm_decode_instance_deleted()</a>, <a class="el" href="dmconfig_8c_source.html#l01532">dm_decode_notifications()</a>, <a class="el" href="dmconfig_8h_source.html#l02560">dm_decode_parameter_changed()</a>, <a class="el" href="dmconfig_8h_source.html#l00554">dm_grp_free()</a>, <a class="el" href="dmmsg_8h_source.html#l00302">flags</a>, <a class="el" href="luawrapper_8c_source.html#l00187">Lua_decode_unknown()</a>, <a class="el" href="codes_8h_source.html#l00072">NOTIFY_INSTANCE_CREATED</a>, <a class="el" href="codes_8h_source.html#l00071">NOTIFY_INSTANCE_DELETED</a>, <a class="el" href="codes_8h_source.html#l00069">NOTIFY_NOTHING</a>, <a class="el" href="codes_8h_source.html#l00070">NOTIFY_PARAMETER_CHANGED</a>, <a class="el" href="codes_8h_source.html#l00055">RC_ERR_MISC</a>, and <a class="el" href="dmmsg_8h_source.html#l00304">vendor_id</a>.</p>
 
 <p>Referenced by <a class="el" href="luawrapper_8c_source.html#l00576">generic_Lua_active_notify_callback()</a>, <a class="el" href="luawrapper_8c_source.html#l00469">generic_Lua_callback()</a>, and <a class="el" href="luawrapper_8c_source.html#l01295">LUA_SIG()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a96a9e47d544c1173ede6a7bdf718d59d"></a>
+<a class="anchor" id="af9a4f812926b00d853ea1fb813f7831e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1154,7 +1154,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> *&#160;</td>
           <td class="paramname"><em>answer</em>&#160;</td>
         </tr>
         <tr>
@@ -1230,7 +1230,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6d008da1c3f7b428f2f6a8db6067a69a"></a>
+<a class="anchor" id="a7b80ad389935abf254b31dcfea947f38"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1258,7 +1258,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a6fe283262dc13f469c55149f78e44634">DIAM_AVPGRP</a> **&#160;</td>
+          <td class="paramtype"><a class="el" href="dmmsg_8h.html#ad4db1c8ff670188c288c0ee1df67a44f">DM_AVPGRP</a> **&#160;</td>
           <td class="paramname"><em>grp</em>&#160;</td>
         </tr>
         <tr>
@@ -1276,7 +1276,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="luawrapper_8c_source.html#l01399">1399</a> of file <a class="el" href="luawrapper_8c_source.html">luawrapper.c</a>.</p>
 
-<p>References <a class="el" href="codes_8h_source.html#l00075">AVP_ABSTICKS</a>, <a class="el" href="codes_8h_source.html#l00047">AVP_ADDRESS</a>, <a class="el" href="codes_8h_source.html#l00078">AVP_BINARY</a>, <a class="el" href="codes_8h_source.html#l00048">AVP_BOOL</a>, <a class="el" href="codes_8h_source.html#l00049">AVP_DATE</a>, <a class="el" href="codes_8h_source.html#l00045">AVP_ENUM</a>, <a class="el" href="codes_8h_source.html#l00044">AVP_ENUMID</a>, <a class="el" href="codes_8h_source.html#l00097">AVP_INT32</a>, <a class="el" href="codes_8h_source.html#l00100">AVP_INT64</a>, <a class="el" href="codes_8h_source.html#l00041">AVP_PATH</a>, <a class="el" href="codes_8h_source.html#l00076">AVP_RELTICKS</a>, <a class="el" href="codes_8h_source.html#l00046">AVP_STRING</a>, <a class="el" href="codes_8h_source.html#l00099">AVP_UINT32</a>, <a class="el" href="codes_8h_source.html#l00101">AVP_UINT64</a>, <a class="el" href="codes_8h_source.html#l00074">AVP_UNKNOWN</a>, <a class="el" href="dmconfig_8c_source.html#l01320">dm_grp_set()</a>, <a class="el" href="dmconfig_8h_source.html#l01003">dm_grp_set_addr()</a>, <a class="el" href="dmconfig_8h_source.html#l01103">dm_grp_set_binary()</a>, <a class="el" href="dmconfig_8h_source.html#l00862">dm_grp_set_bool()</a>, <a class="el" href="dmconfig_8h_source.html#l01032">dm_grp_set_date()</a>, <a class="el" href="dmconfig_8h_source.html#l00969">dm_grp_set_enum()</a>, <a class="el" href="dmconfig_8h_source.html#l00951">dm_grp_set_enumid()</a>, <a class="el" href="dmconfig_8h_source.html#l00879">dm_grp_set_int32()</a>, <a class="el" href="dmconfig_8h_source.html#l01086">dm_grp_set_path()</a>, <a class="el" href="dmconfig_8h_source.html#l00986">dm_grp_set_string()</a>, <a class="el" href="dmconfig_8h_source.html#l00897">dm_grp_set_uint32()</a>, <a class="el" href="dmconfig_8h_source.html#l00933">dm_grp_set_uint64()</a>, <a class="el" href="dmconfig_8h_source.html#l01120">dm_grp_set_unknown()</a>, <a class="el" href="diammsg_8h_source.html#l00025">htonll</a>, and <a class="el" href="luawrapper_8c_source.html#l01393">TABLE_ERR2</a>.</p>
+<p>References <a class="el" href="codes_8h_source.html#l00075">AVP_ABSTICKS</a>, <a class="el" href="codes_8h_source.html#l00047">AVP_ADDRESS</a>, <a class="el" href="codes_8h_source.html#l00078">AVP_BINARY</a>, <a class="el" href="codes_8h_source.html#l00048">AVP_BOOL</a>, <a class="el" href="codes_8h_source.html#l00049">AVP_DATE</a>, <a class="el" href="codes_8h_source.html#l00045">AVP_ENUM</a>, <a class="el" href="codes_8h_source.html#l00044">AVP_ENUMID</a>, <a class="el" href="codes_8h_source.html#l00097">AVP_INT32</a>, <a class="el" href="codes_8h_source.html#l00100">AVP_INT64</a>, <a class="el" href="codes_8h_source.html#l00041">AVP_PATH</a>, <a class="el" href="codes_8h_source.html#l00076">AVP_RELTICKS</a>, <a class="el" href="codes_8h_source.html#l00046">AVP_STRING</a>, <a class="el" href="codes_8h_source.html#l00099">AVP_UINT32</a>, <a class="el" href="codes_8h_source.html#l00101">AVP_UINT64</a>, <a class="el" href="codes_8h_source.html#l00074">AVP_UNKNOWN</a>, <a class="el" href="dmconfig_8c_source.html#l01320">dm_grp_set()</a>, <a class="el" href="dmconfig_8h_source.html#l01003">dm_grp_set_addr()</a>, <a class="el" href="dmconfig_8h_source.html#l01103">dm_grp_set_binary()</a>, <a class="el" href="dmconfig_8h_source.html#l00862">dm_grp_set_bool()</a>, <a class="el" href="dmconfig_8h_source.html#l01032">dm_grp_set_date()</a>, <a class="el" href="dmconfig_8h_source.html#l00969">dm_grp_set_enum()</a>, <a class="el" href="dmconfig_8h_source.html#l00951">dm_grp_set_enumid()</a>, <a class="el" href="dmconfig_8h_source.html#l00879">dm_grp_set_int32()</a>, <a class="el" href="dmconfig_8h_source.html#l01086">dm_grp_set_path()</a>, <a class="el" href="dmconfig_8h_source.html#l00986">dm_grp_set_string()</a>, <a class="el" href="dmconfig_8h_source.html#l00897">dm_grp_set_uint32()</a>, <a class="el" href="dmconfig_8h_source.html#l00933">dm_grp_set_uint64()</a>, <a class="el" href="dmconfig_8h_source.html#l01120">dm_grp_set_unknown()</a>, <a class="el" href="dmmsg_8h_source.html#l00025">htonll</a>, and <a class="el" href="luawrapper_8c_source.html#l01393">TABLE_ERR2</a>.</p>
 
 <p>Referenced by <a class="el" href="luawrapper_8c_source.html#l01542">Lua_build_set_grp()</a>, <a class="el" href="luawrapper_8c_source.html#l01928">LUA_SIG()</a>, and <a class="el" href="luawrapper_8c_source.html#l01962">LUA_SIG_REGISTER()</a>.</p>
 
@@ -1576,7 +1576,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="luawrapper_8c_source.html#l00667">667</a> of file <a class="el" href="luawrapper_8c_source.html">luawrapper.c</a>.</p>
 
-<p>References <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="luawrapper_8c_source.html#l00155">DMCONFIG_CALLBACK_MT</a>, and <a class="el" href="luawrapper_8c_source.html#l00154">DMCONFIG_SESSION_EVENTS_MT</a>.</p>
+<p>References <a class="el" href="dmmsg_8h_source.html#l00301">code</a>, <a class="el" href="luawrapper_8c_source.html#l00155">DMCONFIG_CALLBACK_MT</a>, and <a class="el" href="luawrapper_8c_source.html#l00154">DMCONFIG_SESSION_EVENTS_MT</a>.</p>
 
 <p>Referenced by <a class="el" href="luawrapper_8c_source.html#l02079">Lua_generic_register()</a>, and <a class="el" href="luawrapper_8c_source.html#l00700">LUA_SIG_REGISTER()</a>.</p>
 
@@ -1838,7 +1838,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="luawrapper_8c_source.html#l01022">1022</a> of file <a class="el" href="luawrapper_8c_source.html">luawrapper.c</a>.</p>
 
-<p>References <a class="el" href="dmconfig_8h_source.html#l01435">dm_send_get_cfg_session_info()</a>, <a class="el" href="luawrapper_8c_source.html#l00153">DMCONFIG_SESSION_SEQUENTIAL_MT</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, and <a class="el" href="luawrapper_8c_source.html#l00172">Lua_decode_get_cfg_session_info()</a>.</p>
+<p>References <a class="el" href="dmconfig_8h_source.html#l01435">dm_send_get_cfg_session_info()</a>, <a class="el" href="luawrapper_8c_source.html#l00153">DMCONFIG_SESSION_SEQUENTIAL_MT</a>, <a class="el" href="dmmsg_8h_source.html#l00302">flags</a>, and <a class="el" href="luawrapper_8c_source.html#l00172">Lua_decode_get_cfg_session_info()</a>.</p>
 
 </div>
 </div>
@@ -2198,7 +2198,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="luawrapper_8c_source.html#l00854">854</a> of file <a class="el" href="luawrapper_8c_source.html">luawrapper.c</a>.</p>
 
-<p>References <a class="el" href="dmconfig_8h_source.html#l00101">CMD_FLAG_READWRITE</a>, <a class="el" href="codes_8h_source.html#l00027">CMD_STARTSESSION</a>, <a class="el" href="dmconfig_8h_source.html#l01744">dm_register_start_session()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="luawrapper_8c_source.html#l00469">generic_Lua_callback()</a>, and <a class="el" href="luawrapper_8c_source.html#l00667">Lua_register_eval()</a>.</p>
+<p>References <a class="el" href="dmconfig_8h_source.html#l00101">CMD_FLAG_READWRITE</a>, <a class="el" href="codes_8h_source.html#l00027">CMD_STARTSESSION</a>, <a class="el" href="dmconfig_8h_source.html#l01744">dm_register_start_session()</a>, <a class="el" href="dmmsg_8h_source.html#l00302">flags</a>, <a class="el" href="luawrapper_8c_source.html#l00469">generic_Lua_callback()</a>, and <a class="el" href="luawrapper_8c_source.html#l00667">Lua_register_eval()</a>.</p>
 
 </div>
 </div>
@@ -2218,7 +2218,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="luawrapper_8c_source.html#l00936">936</a> of file <a class="el" href="luawrapper_8c_source.html">luawrapper.c</a>.</p>
 
-<p>References <a class="el" href="dmconfig_8h_source.html#l00101">CMD_FLAG_READWRITE</a>, <a class="el" href="codes_8h_source.html#l00029">CMD_SWITCHSESSION</a>, <a class="el" href="dmconfig_8h_source.html#l01773">dm_register_switch_session()</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="luawrapper_8c_source.html#l00469">generic_Lua_callback()</a>, and <a class="el" href="luawrapper_8c_source.html#l00667">Lua_register_eval()</a>.</p>
+<p>References <a class="el" href="dmconfig_8h_source.html#l00101">CMD_FLAG_READWRITE</a>, <a class="el" href="codes_8h_source.html#l00029">CMD_SWITCHSESSION</a>, <a class="el" href="dmconfig_8h_source.html#l01773">dm_register_switch_session()</a>, <a class="el" href="dmmsg_8h_source.html#l00302">flags</a>, <a class="el" href="luawrapper_8c_source.html#l00469">generic_Lua_callback()</a>, and <a class="el" href="luawrapper_8c_source.html#l00667">Lua_register_eval()</a>.</p>
 
 </div>
 </div>
@@ -2528,7 +2528,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_416a6a781e1de958de39213487b69f7e.html">libdmconfig</a></li><li class="navelem"><a class="el" href="luawrapper_8c.html">luawrapper.c</a></li>
-    <li class="footer">Generated on Thu Feb 27 2014 11:36:15 for mand-1.0 by
+    <li class="footer">Generated on Thu Feb 27 2014 12:14:00 for mand-1.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -69,24 +69,24 @@ $(document).ready(function(){initNavTree('debug_8h.html','');});
 <div class="title">debug.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="diammsg_8h_source.html">diammsg.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="dmmsg_8h_source.html">dmmsg.h</a>&quot;</code><br/>
 </div>
 <p><a href="debug_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3d639247d61bf5157d2c59faf334a7e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#a3d639247d61bf5157d2c59faf334a7e7">dump_diam_packet</a> (<a class="el" href="diammsg_8h.html#a89d35fa55b3d1529d2b07061489b102a">DIAM_REQUEST</a> *req)</td></tr>
-<tr class="separator:a3d639247d61bf5157d2c59faf334a7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec24d9e76d53140d4f7e029c06e248f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#aeec24d9e76d53140d4f7e029c06e248f">dump_dm_packet</a> (<a class="el" href="dmmsg_8h.html#a9029a1f555aa9b1f92a2ddc59d2f0f30">DM_REQUEST</a> *req)</td></tr>
+<tr class="separator:aeec24d9e76d53140d4f7e029c06e248f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a3d639247d61bf5157d2c59faf334a7e7"></a>
+<a class="anchor" id="aeec24d9e76d53140d4f7e029c06e248f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void dump_diam_packet </td>
+          <td class="memname">void dump_dm_packet </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="diammsg_8h.html#a89d35fa55b3d1529d2b07061489b102a">DIAM_REQUEST</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="dmmsg_8h.html#a9029a1f555aa9b1f92a2ddc59d2f0f30">DM_REQUEST</a> *&#160;</td>
           <td class="paramname"><em>req</em>)</td><td></td>
           <td></td>
         </tr>
@@ -95,7 +95,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="debug_8c_source.html#l00249">249</a> of file <a class="el" href="debug_8c_source.html">debug.c</a>.</p>
 
-<p>References <a class="el" href="debug_8c_source.html#l00184">_get_avp()</a>, <a class="el" href="debug_8c_source.html#l00172">_get_cmd()</a>, <a class="el" href="diammsg_8h_source.html#l00079">diam_packet::app_id</a>, <a class="el" href="codes_8h_source.html#l00080">AVP_CONTAINER</a>, <a class="el" href="diammsg_8h_source.html#l00301">code</a>, <a class="el" href="diammsg_8c_source.html#l00173">diam_decode_avpgrp()</a>, <a class="el" href="diammsg_8h_source.html#l00224">diam_packet_code()</a>, <a class="el" href="diammsg_8h_source.html#l00219">diam_packet_length()</a>, <a class="el" href="diammsg_8h_source.html#l00256">diam_request_get_avp()</a>, <a class="el" href="diammsg_8h_source.html#l00251">diam_request_reset_avp()</a>, <a class="el" href="debug_8c_source.html#l00228">dump_avpgrp()</a>, <a class="el" href="diammsg_8h_source.html#l00081">diam_packet::end2end_id</a>, <a class="el" href="diammsg_8h_source.html#l00077">diam_packet::flags</a>, <a class="el" href="diammsg_8h_source.html#l00302">flags</a>, <a class="el" href="debug_8c_source.html#l00208">hexdump()</a>, <a class="el" href="diammsg_8h_source.html#l00080">diam_packet::hop2hop_id</a>, <a class="el" href="diammsg_8h_source.html#l00086">diam_request::packet</a>, <a class="el" href="diammsg_8h_source.html#l00302">packet</a>, <a class="el" href="diammsg_8h_source.html#l00304">vendor_id</a>, and <a class="el" href="diammsg_8h_source.html#l00075">diam_packet::version</a>.</p>
+<p>References <a class="el" href="debug_8c_source.html#l00184">_get_avp()</a>, <a class="el" href="debug_8c_source.html#l00172">_get_cmd()</a>, <a class="el" href="dmmsg_8h_source.html#l00079">dm_packet::app_id</a>, <a class="el" href="codes_8h_source.html#l00080">AVP_CONTAINER</a>, <a class="el" href="dmmsg_8h_source.html#l00301">code</a>, <a class="el" href="dmmsg_8c_source.html#l00173">dm_decode_avpgrp()</a>, <a class="el" href="dmmsg_8h_source.html#l00224">dm_packet_code()</a>, <a class="el" href="dmmsg_8h_source.html#l00219">dm_packet_length()</a>, <a class="el" href="dmmsg_8h_source.html#l00256">dm_request_get_avp()</a>, <a class="el" href="dmmsg_8h_source.html#l00251">dm_request_reset_avp()</a>, <a class="el" href="debug_8c_source.html#l00228">dump_avpgrp()</a>, <a class="el" href="dmmsg_8h_source.html#l00081">dm_packet::end2end_id</a>, <a class="el" href="dmmsg_8h_source.html#l00077">dm_packet::flags</a>, <a class="el" href="dmmsg_8h_source.html#l00302">flags</a>, <a class="el" href="debug_8c_source.html#l00208">hexdump()</a>, <a class="el" href="dmmsg_8h_source.html#l00080">dm_packet::hop2hop_id</a>, <a class="el" href="dmmsg_8h_source.html#l00086">dm_request::packet</a>, <a class="el" href="dmmsg_8h_source.html#l00302">packet</a>, <a class="el" href="dmmsg_8h_source.html#l00304">vendor_id</a>, and <a class="el" href="dmmsg_8h_source.html#l00075">dm_packet::version</a>.</p>
 
 <p>Referenced by <a class="el" href="dmconfig_8c_source.html#l00389">dm_generic_register_request()</a>, and <a class="el" href="dmconfig_8c_source.html#l01114">readEvent()</a>.</p>
 
@@ -107,7 +107,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_416a6a781e1de958de39213487b69f7e.html">libdmconfig</a></li><li class="navelem"><a class="el" href="debug_8h.html">debug.h</a></li>
-    <li class="footer">Generated on Thu Feb 27 2014 11:36:15 for mand-1.0 by
+    <li class="footer">Generated on Thu Feb 27 2014 12:14:00 for mand-1.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
