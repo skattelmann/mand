@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "mand-1.0", "index.html", [
+    [ "API Introduction", "md_doc_API.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", null, [
       [ "Data Structures", "annotated.html", "annotated" ],
@@ -30,7 +31,7 @@ var NAVTREEINDEX =
 "annotated.html",
 "dmconfig_8h.html#ga223fd0923836365c85ab5d47f370152f",
 "globals_func_0x68.html",
-"structdm__avpgrp.html#a2aae46fa7a9791bc66f91acd961c94d0"
+"structdm__avpgrp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
